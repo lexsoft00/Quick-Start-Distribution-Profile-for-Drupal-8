@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ace_editor
+format: full_html
+editor: ace_editor
+settings:
+  fieldset:
+    theme: cobalt
+    syntax: html
+    height: 300px
+    width: 100%
+    font_size: 10pt
+    line_numbers: 1
+    print_margins: 1
+    show_invisibles: 0
+    use_wrap_mode: 1
+image_upload: {  }

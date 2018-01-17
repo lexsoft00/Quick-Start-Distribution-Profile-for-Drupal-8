@@ -1,0 +1,88 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - ckeditor
+format: filtered_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Outdent
+            - Indent
+            - HorizontalRule
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+            - Undo
+            - Redo
+            - Copy
+            - Cut
+            - Paste
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Media
+          items:
+            - Blockquote
+            - ImceImage
+            - DrupalImage
+            - Format
+            - Styles
+        -
+          name: Tools
+          items:
+            - Source
+            - btbutton
+            - ShowBlocks
+            - Table
+            - Glyphicons
+            - WidgetTemplateMenu
+            - Accordion
+            - FontAwesome
+            - widgetbootstrapLeftCol
+            - widgetbootstrapRightCol
+            - widgetbootstrapTwoCol
+            - widgetbootstrapThreeCol
+            - widgetbootstrapAccordion
+            - widgetcommonBox
+  plugins:
+    autogrow:
+      enable: 0
+      min_height: '250'
+      max_height: '600'
+      bottom_space: '50'
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: editor/files
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

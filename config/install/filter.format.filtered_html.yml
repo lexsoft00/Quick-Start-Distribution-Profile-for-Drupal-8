@@ -1,0 +1,94 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ace_editor
+    - editor
+    - entity_embed
+    - inline_responsive_images
+    - pathologic
+name: 'Filtered HTML'
+format: filtered_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang data-toggle data-placement title aria-controls role target class=""> <em> <strong> <cite> <blockquote cite> <code> <ul type id class=""> <ol start type id class=""> <li id role class=""> <dl class=""> <dt class=""> <dd class=""> <h1 id class=""> <h2 id class=""> <h3 id class=""> <h4 id class=""> <h5 id class=""> <h6 id class=""> <p class=""> <br> <div id data-tab-set-title class=""> <iframe id allowfullscreen frameborder height width src class=""> <i aria-hidden class=""> <span class=""> <u> <s> <button data-toggle data-placement data-dismiss title class=""> <hr> <img src alt height width data-entity-type data-entity-uuid data-align data-caption data-image-style data-responsive-image-style class=""> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <section class=" brand-secondary-color"> <table class=""> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <sup>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 7
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  filter_imagestyle:
+    id: filter_imagestyle
+    provider: inline_responsive_images
+    status: true
+    weight: 0
+    settings:
+      image_style_file_entity_browser_small: '0'
+      image_style_file_entity_browser_thumbnail: '0'
+      image_style_large: '0'
+      image_style_large_retina: '1'
+      image_style_linkit_result_thumbnail: '0'
+      image_style_medium: '0'
+      image_style_medium_retina: '1'
+      image_style_thumbnail: '0'
+      image_style_thumbnail_retina: '1'
+  filter_responsive_image_style:
+    id: filter_responsive_image_style
+    provider: inline_responsive_images
+    status: false
+    weight: 0
+    settings:
+      responsive_style_narrow: '0'
+      responsive_style_wide: '0'
+  filter_pathologic:
+    id: filter_pathologic
+    provider: pathologic
+    status: true
+    weight: 50
+    settings:
+      settings_source: global
+      local_settings:
+        protocol_style: full
+        local_paths: ''
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 0
+    settings: {  }
+  ace_filter:
+    id: ace_filter
+    provider: ace_editor
+    status: false
+    weight: 0
+    settings:
+      theme: cobalt
+      syntax: html
+      height: 500px
+      width: 700px
+      font_size: 10pt
+      line_numbers: '1'
+      print_margins: '1'
+      show_invisibles: '0'
+      use_wrap_mode: '1'

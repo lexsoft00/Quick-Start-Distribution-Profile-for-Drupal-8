@@ -1,0 +1,87 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the profilename install profile.
+ */
+use Symfony\Component\Yaml\Yaml;
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+use Drupal\shortcut\Entity\Shortcut;
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function quick_start_install() {
+   // Set front page to "node".
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
+
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
+
+  // Restrict user registration to admin role creation.
+  \Drupal::configFactory()->getEditable('user.settings')->set('register', USER_REGISTER_ADMINISTRATORS_ONLY)->save(TRUE);
+
+  // Allow authenticated users to use shortcuts.
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['access shortcuts']);
+
+  // Populate the default shortcut set.
+  $shortcut = Shortcut::create(array(
+    'shortcut_set' => 'default',
+    'title' => t('Add content'),
+    'weight' => 0,
+    'link' => array('uri' => 'internal:/node/add'),
+  ));
+  $shortcut->save();
+
+  $shortcut = Shortcut::create(array(
+    'shortcut_set' => 'default',
+    'title' => t('All content'),
+    'weight' => 1,
+    'link' => array('uri' => 'internal:/admin/content'),
+  ));
+  $shortcut->save();
+
+  $shortcut = Shortcut::create(array(
+    'shortcut_set' => 'default',
+    'title' => t('All media'),
+    'weight' => 2,
+    'link' => array('uri' => 'internal:/admin/content/media'),
+  ));
+  $shortcut->save();
+
+  $shortcut = Shortcut::create(array(
+    'shortcut_set' => 'default',
+    'title' => t('Taxonomy'),
+    'weight' => 3,
+    'link' => array('uri' => 'internal:/admin/structure/taxonomy'),
+  ));
+  $shortcut->save();
+
+  $shortcut = Shortcut::create(array(
+    'shortcut_set' => 'default',
+    'title' => t('Permissions'),
+    'weight' => 4,
+    'link' => array('uri' => 'internal:/admin/people/permissions'),
+  ));
+  $shortcut->save();
+
+  // Allow all users to use search.
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('search content'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('search content'));
+    // Default user theme.
+    \Drupal::configFactory()->getEditable('system.theme')->set('default', 'drupalcoders_bootstrap')->save(TRUE);
+    // Enable the admin theme.
+    \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme_extras')->save(TRUE);
+   // Enable the admin theme.
+    \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
+  // Entity updates to clear up any mismatched entity and/or field definitions
+  // And Fix changes were detected in the entity type and field definitions.
+  \Drupal::entityDefinitionUpdateManager()->applyUpdates();
+  // Can add code in here to make nodes, terms, etc.
+
+}

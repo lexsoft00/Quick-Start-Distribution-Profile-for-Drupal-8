@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+id: member
+label: 'Member profile'
+description: 'Configuration for site members'
+conf:
+  extensions: 'jpg png gif'
+  maxsize: !!float 25
+  quota: !!float 250
+  maxwidth: 2000
+  maxheight: 2000
+  replace: 1
+  folders:
+    -
+      path: editor/files
+      permissions:
+        browse_files: true
+        upload_files: true
+        delete_files: true
+        resize_images: true

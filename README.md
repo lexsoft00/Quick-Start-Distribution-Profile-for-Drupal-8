@@ -1,2 +1,2 @@
-# Quick-Start-Distribution-Profile-for-Drupal-8
-Quick Start Distribution Profile for Drupal 8
+# quick_start
+Quick Start Drupal Distribution
