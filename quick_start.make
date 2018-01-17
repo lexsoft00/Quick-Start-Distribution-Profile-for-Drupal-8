@@ -234,4 +234,69 @@ projects:
   bootstrap:
     version: '3.7'
   drupalcoders_bootstrap:
-    version: 1.0-alpha3
+    version: 1.0-alpha4
+
+    
+# Libraries
+# --------
+libraries:
+  autogrow:
+    download:
+      type: get
+      url: https://download.ckeditor.com/autogrow/releases/autogrow_4.7.3.zip
+    destination: libraries
+    directory_name: autogrow
+  colordialog:
+    download:
+      type: get
+      url: https://download.ckeditor.com/colordialog/releases/colordialog_4.7.3.zip
+    destination: libraries
+    directory_name: colordialog
+  glyphicons:
+    download:
+      type: get
+      url: https://download.ckeditor.com/glyphicons/releases/glyphicons_2.2.zip
+    destination: libraries
+    directory_name: glyphicons
+  dropzone:
+    download:
+      type: get
+      url: https://github.com/enyo/dropzone/archive/v4.3.0.tar.gz
+    destination: libraries
+    directory_name: dropzone    
+  blazy:
+    download:
+      type: get
+      url: https://github.com/dinbror/blazy/archive/1.8.2.tar.gz
+    destination: libraries
+    directory_name: blazy  
+  slick:
+    download:
+      type: get
+      url: https://github.com/kenwheeler/slick/archive/1.6.0.tar.gz
+    destination: libraries
+    directory_name: slick          
+  ace:
+    download:
+      type: get
+      url: http://github.com/ajaxorg/ace-builds/archive/v1.2.6.tar.gz
+    destination: libraries
+    directory_name: ace
+  imagesloaded:
+    download:
+      type: get
+      url: https://github.com/desandro/imagesloaded/archive/v3.2.0.zip
+    destination: libraries
+    directory_name: imagesloaded
+  btbutton:
+    download:
+      type: get
+      url: https://github.com/smonetti/btbutton/archive/master.zip
+    destination: libraries
+    directory_name: btbutton  
+  masonry:
+    download:
+      type: get
+      url: https://github.com/desandro/masonry/archive/v3.3.2.zip
+    destination: libraries
+    directory_name: masonry    
