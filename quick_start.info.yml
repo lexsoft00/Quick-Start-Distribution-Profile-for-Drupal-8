@@ -1,6 +1,6 @@
 name: Quick Start
 type: profile
-description: Demonstrates how a module can define blocks.
+description: Quick Start for Drupal 8.
 # core: 8.x
 distribution:
   name: Quick Start
@@ -129,6 +129,8 @@ dependencies:
   - views_infinite_scroll
   - viewsreference
   - yoast_seo
+  # Custom.
+  - quick_start_features
 
 themes:
   # Contrib themes.
