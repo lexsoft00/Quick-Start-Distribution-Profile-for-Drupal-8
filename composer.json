@@ -115,6 +115,11 @@
     "drupal/bootstrap": "3.7", 
     "drupal/drupalcoders_bootstrap": "1.0-beta01"
   },
+  "autoload": {
+    "psr-4": {
+      "Quick\\": "src"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-8.x-4.x": "8.4.x-dev"
@@ -122,7 +127,7 @@
     "installer-paths": {
         "core": ["type:drupal-core"],
         "modules/contrib/{$name}": ["type:drupal-module"],
-        "profiles/contrib/{$name}": ["type:drupal-profile"],
+        "profiles/{$name}": ["type:drupal-profile"],
         "themes/contrib/{$name}": ["type:drupal-theme"],
         "drush/contrib/{$name}": ["type:drupal-drush"],
         "modules/custom/{$name}": ["type:drupal-custom-module"],
