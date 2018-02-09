@@ -135,7 +135,7 @@
           {"name": "blazy", "package": "quick_start/blazy"},
           {"name": "slick", "package": "quick_start/slick"},
           {"name": "ace", "package": "quick_start/ace"},
-          {"name": "colorbox", "package": "quick_start/colorbox"},
+          {"name": "colorbox", "package": "quick_start/colorbox"}
       ]
     },
     "enable-patching": true,
