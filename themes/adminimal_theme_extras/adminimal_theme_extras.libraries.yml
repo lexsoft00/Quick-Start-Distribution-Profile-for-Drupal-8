@@ -1,0 +1,14 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/adminimal.css: {}
+toolbar:
+  css:
+    component:
+      css/toolbar.module.css: {}
+
+toolbar.menu:
+  css:
+    state:
+      css/toolbar.menu.css: {}

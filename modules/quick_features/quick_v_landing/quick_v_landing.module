@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains quick_v_landing.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function quick_v_landing_form_node_landing_page_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add the Quick V Bootstrap Paragraphs default admin styling.
+  $form['#attached']['library'][] = 'quick_v_bootstrap_paragraphs/qvbp-default-admin';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function quick_v_landing_form_node_landing_page_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add the Quick V Bootstrap Paragraphs default admin styling.
+  $form['#attached']['library'][] = 'quick_v_bootstrap_paragraphs/qvbp-default-admin';
+}

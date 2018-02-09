@@ -1,0 +1,31 @@
+name: 'Media Hero Slider'
+description: 'This app will populate the universal implementation of a "Hero Slider" to be used on the homepage in most cases. A rich hero slider that allows you to display video and/or image slides.'
+type: module
+dependencies:
+  - block
+  - block_class
+  - block_content
+  - dropzonejs_eb_widget
+  - ds
+  - entity_browser
+  - entity_browser_entity_form
+  - entityqueue
+  - field
+  - field_group
+  - image
+  - link
+  - media_entity
+  - menu_ui
+  - node
+  - page_manager
+  - panelizer
+  - panels
+  - path
+  - rabbit_hole
+  - slick
+  - slick_views
+  - system
+  - user
+  - video_embed_field
+  - views
+package: Quick

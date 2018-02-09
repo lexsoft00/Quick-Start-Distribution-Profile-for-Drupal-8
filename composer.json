@@ -1,0 +1,209 @@
+{
+  "name": "drupalcoders/quick_start",
+  "description": "Quick Start for Drupal 8",
+  "type": "drupal-profile",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Alexandru Dragu",
+      "homepage": "http://drupalcoders.org",
+      "role": "Maintainer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "composer/installers": "1.4.0",
+    "cweagans/composer-patches": "1.6.4",
+    "drupal-composer/drupal-scaffold": "2.4.0",
+    "drupal/drupal-library-installer-plugin": "0.3",
+    "drupal/core": "8.4.4",    
+    "drupal/ace_editor": "1.0",
+    "drupal/admin_toolbar": "1.23",
+    "drupal/adminimal_admin_toolbar": "1.5",
+    "drupal/advanced_text_formatter": "1.0-beta3",
+    "drupal/autocomplete_deluxe": "1.0-beta1",
+    "drupal/better_exposed_filters": "3.0-alpha3",
+    "drupal/blazy": "1.0-rc2",
+    "drupal/block_class": "1.0-alpha1",
+    "drupal/bootstrap_layouts": "5.1",
+    "drupal/bootstrap_paragraphs": "2.0-beta2",
+    "drupal/captcha": "1.0-beta1",
+    "drupal/colorbox": "1.4",    
+    "drupal/ckeditor_accordion": "1.0",
+    "drupal/ckeditor_widgets": "1.x-dev#2d462637f8804b6d0b530604d0376e97a23a3b7f",
+    "drupal/coffee": "1.0-beta2",
+    "drupal/config_update": "1.5",
+    "drupal/config_filter": "1.1",
+    "drupal/config_ignore": "2.1",    
+    "drupal/contact_formatter": "1.0",
+    "drupal/content_lock": "1.0-alpha7",
+    "drupal/crop": "1.5",
+    "drupal/ctools": "3.0",
+    "drupal/devel": "1.2",
+    "drupal/diff": "1.0-rc1",
+    "drupal/dropzonejs": "1.0-alpha8",
+    "drupal/ds": "3.1",
+    "drupal/embed": "1.0",
+    "drupal/entity": "1.0-beta1",
+    "drupal/entity_browser": "1.4",
+    "drupal/entity_browser_enhanced": "1.0-beta6",    
+    "drupal/entity_clone": "1.0-alpha2",
+    "drupal/entity_embed": "1.0-beta2",
+    "drupal/entity_reference_revisions": "1.4",
+    "drupal/entityqueue": "1.0-alpha7",
+    "drupal/entityqueue_form_widget": "1.0-beta3",
+    "drupal/extlink": "1.x-dev#8a773a6c5519ccb167e18cc39d68551b30b0e4b3",    
+    "drupal/features": "3.5",
+    "drupal/field_group": "3.0-beta1",
+    "drupal/focal_point": "1.0-beta5",
+    "drupal/google_analytics": "2.2",
+    "drupal/imageapi_optimize": "2.0-alpha3",
+    "drupal/inline_entity_form": "1.0-beta1",
+    "drupal/inline_responsive_images": "2.1",
+    "drupal/libraries_ui": "1.0",
+    "drupal/link_attributes": "1.2",
+    "drupal/linkit": "4.3",
+    "drupal/mailsystem": "4.1",
+    "drupal/masquerade": "2.0-beta1",
+    "drupal/maxlength": "1.0-beta1",
+    "drupal/media_entity": "1.7",
+    "drupal/media_entity_document": "1.1",
+    "drupal/media_entity_image": "1.2",
+    "drupal/menu_block": "1.4",
+    "drupal/menu_position": "1.x-dev#d134276b4bbd08b3c9678943d0225fbef7dd05b5",
+    "drupal/metatag": "1.4",    
+    "drupal/node_edit_protection": "1.x-dev#902339c08222f838030c07aaea23bdc51ababebd",
+    "drupal/page_manager": "4.0-beta2",
+    "drupal/panelizer": "4.0",
+    "drupal/panels": "4.2",
+    "drupal/paragraphs": "1.2",
+    "drupal/paragraphs_previewer": "1.0",
+    "drupal/pathauto": "1.0",
+    "drupal/pathologic": "1.x-dev#4f9f3fdcf1e0b224c4d8650e383a769f40abf9bf",
+    "drupal/quick_v_media": "1.0-alpha1",
+    "drupal/quick_v_bootstrap_paragraphs": "1.0-alpha3",
+    "drupal/rabbit_hole": "1.0-beta4",
+    "drupal/recaptcha": "2.2",
+    "drupal/redirect": "1.0",
+    "drupal/responsive_preview": "1.0-alpha7",
+    "drupal/retina_images": "1.x-dev#20aa2a1f101e92dced5e373dac5300e9269619c7",
+    "drupal/schema_metatag": "1.0",    
+    "drupal/search_api": "1.6",
+    "drupal/simple_sitemap": "2.11",
+    "drupal/slick": "1.0",
+    "drupal/slick_views": "1.0-rc2",
+    "drupal/slick_media": "1.0",    
+    "drupal/smart_trim": "1.0",
+    "drupal/smtp": "1.0-beta3",
+    "drupal/token": "1.1",
+    "drupal/ultimate_cron": "2.0-alpha2",
+    "drupal/userprotect": "1.0",
+    "drupal/video_embed_field": "1.5",
+    "drupal/views_bootstrap": "3.0",
+    "drupal/views_infinite_scroll": "1.5",
+    "drupal/viewsreference": "1.2",
+    "drupal/webform": "5.0-rc1",
+    "drupal/xmlsitemap": "1.0-alpha2",
+    "drupal/yoast_seo": "1.3",
+    "drupal/bootstrap": "3.7", 
+    "drupal/drupalcoders_bootstrap": "1.0-beta01"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-8.x-4.x": "8.4.x-dev"
+    },
+    "installer-paths": {
+        "core": ["type:drupal-core"],
+        "modules/contrib/{$name}": ["type:drupal-module"],
+        "profiles/contrib/{$name}": ["type:drupal-profile"],
+        "themes/contrib/{$name}": ["type:drupal-theme"],
+        "drush/contrib/{$name}": ["type:drupal-drush"],
+        "modules/custom/{$name}": ["type:drupal-custom-module"],
+        "themes/custom/{$name}": ["type:drupal-custom-theme"]
+    },
+    "drupal-libraries": {
+      "library-directory": "libraries",
+      "libraries": [
+          {"name": "dropzone","package": "quick_start/dropzone"},
+          {"name": "blazy", "package": "quick_start/blazy"},
+          {"name": "slick", "package": "quick_start/slick"},
+          {"name": "ace", "package": "quick_start/ace"},
+          {"name": "colorbox", "package": "quick_start/colorbox"},
+      ]
+    },
+    "enable-patching": true,
+    "patches": {
+      "drupal/ace_editor": {
+        "Issue #2916832: Add support for calling libraries from the current active profile":
+        "https://www.drupal.org/files/issues/2916832-4.patch"
+      },
+      "drupal/ckeditor_widgets": {
+        ";; Issue #2926160: Can't insert images inside Drupal CKEditor Boostrap Widgets editable area":
+        "https://www.drupal.org/files/issues/ckeditor-widgets-images-2926160-3-8.patch"
+      },
+      "drupal/coffee": {
+        "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8":
+        "https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch",
+        "Issue #2872093: Coffee css fixes in RTL":
+        "https://www.drupal.org/files/issues/2872093-10.patch"
+      },
+      "drupal/ctools": {
+        "Issue #2820783: Fix Block.php notices and warnings.":
+        "https://www.drupal.org/files/issues/fixblockpager-2820783-27.patch"
+      },
+      "drupal/entityqueue": {
+        "Issue #2145441: Option to create Entityqueue tab on Entity pages.":
+        "https://www.drupal.org/files/issues/2145441-32.patch",
+        "Issue #2825773: Make Contextual links work for views using Entityqueue":
+        "https://www.drupal.org/files/issues/2825773-23-outside_in_to_settings_tray.patch",
+        "Issue #2916026: Only users with [Administer entityqueue] should be able to delete entityqueues":
+        "https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-to-delete-entityqueues-2916026-3.patch",
+        "Issue #2917308: Only users with [Administer entityqueue] should be able to edit (configure) entityqueues":
+        "https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-edit-configure-entityqueues-2917308-2.patch"
+      },
+      "drupal/focal_point": {
+        "Issue #2915497: Missing schema for focal_point_scale_and_crop effect":
+        "https://www.drupal.org/files/issues/2915497_3.patch",
+        "Issue #2916562: Broken image preview":
+        "https://www.drupal.org/files/issues/2916562-16.patch"
+      },                              
+      "drupal/page_manager": {
+        "Issue #2624972: No configuration possible in UI for 301, 303, etc. HTTP responses":
+        "https://www.drupal.org/files/issues/page_manager-redirect_location-2624972-30.patch"
+      },
+      "drupal/paragraphs": {
+        "Issue #2461695: Support translatable paragraph entity reference revision field":
+        "https://www.drupal.org/files/issues/meta_support-2461695-222.patch",
+        "Issue #2868155: Add new hooks to allow easier editing of paragraph forms":
+        "https://www.drupal.org/files/issues/2868155-16.patch",
+        "Issue #2877927: Show add widget between paragraphs on hover":
+        "https://www.drupal.org/files/issues/2877927_29.patch",
+        "Issue #2909416: Hide duplicate action while translating.":
+        "https://www.drupal.org/files/issues/2909416-2.patch",
+        "Issue #2924774: Let Editors add/delete/clone paragraphs When [Editing a translation]":
+        "https://www.drupal.org/files/issues/2924774-4.patch"
+      },
+      "drupal/paragraphs_previewer": {
+        "Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch":
+        "https://www.drupal.org/files/issues/2904917-2.patch"
+      },
+      "drupal/retina_images": {
+        "Issue #2682459: Support for focal point":
+        "https://www.drupal.org/files/issues/edit_support_for_focal-2682459-2.patch",
+        "Issue #2761359: Remove @file tag docblock from all the .php files":
+        "https://www.drupal.org/files/issues/2761359-2.patch"        
+      },
+      "drupal/yoast_seo": {
+        "Issue #2877613: Add [ Text (plain, long) ] filed type [string_log] for yoast seo to use.":
+        "https://www.drupal.org/files/issues/2877613-2_0.patch"
+      }          
+    }
+  }      
+}

@@ -1,7 +1,7 @@
 name: Quick Start
 type: profile
 description: Quick Start for Drupal 8.
-# core: 8.x
+core: 8.x
 distribution:
   name: Quick Start
 # version: 8.x-4.x-dev
@@ -32,7 +32,6 @@ dependencies:
   - options
   - page_cache
   - path
-  - quickedit
   - responsive_image
   - shortcut
   - syslog
@@ -47,99 +46,88 @@ dependencies:
   - layout_discovery
   - rdf
 
-  # contrib
-  - autogrow
+   # contrib
   - automated_cron
   - ace_editor
   - admin_toolbar
   - admin_toolbar_tools
-  - adminimal_admin_toolbar
+  - adminimal_admin_toolbar   
   - advanced_text_formatter
   - autocomplete_deluxe
   - better_exposed_filters
   - block_class
   - bootstrap_layouts
-  - bootstrap_paragraphs
-  - ckeditor_accordion
-  - ckeditor_bootstrap_buttons
-  - ckeditor_widgets
+  - blazy
   - coffee
   - config_update
-  - contact_formatter
-  - content_lock
+  - content_lock  
+  - ckeditor_accordion
+  - ckeditor_widgets    
   - crop
   - ctools
+  - ctools_block
+  - ctools_views
   - devel
   - kint
-  - diff
+  - diff  
   - dropzonejs
+  - dropzonejs_eb_widget
   - ds
   - embed
   - entity
+  - entity_clone  
   - entity_browser
-  - entity_clone
-  - entity_embed
+  - entity_browser_enhanced  
   - entity_reference_revisions
   - entityqueue
-  - entityqueue_form_widget
+  - entityqueue_form_widget  
+  - entity_embed
+  - extlink  
   - features
   - field_group
-  - file_browser
   - focal_point
-  - glyphicons
   - google_analytics
   - imageapi_optimize
-  - inline_entity_form
+  - inline_entity_form  
   - inline_responsive_images
-  - imce
   - libraries_ui
   - link_attributes
   - linkit
-  - login_destination
   - mailsystem
   - masquerade
-  - maxlength
+  - maxlength    
   - media_entity
   - media_entity_document
   - media_entity_image
   - menu_block
   - menu_position
-  - metatag
-  - node_edit_protection
+  - node_edit_protection  
   - page_manager
   - page_manager_ui
-  - panelizer
-  - panels
-  - paragraphs
-  - paragraphs_previewer
-  - pathauto
-  - pathologic
+  - panels 
+  - panels_ipe   
+  - panelizer  
   - rabbit_hole
-  - recaptcha
-  - responsive_preview
-  - retina_images
-  - search_api
+  - recaptcha  
+  - responsive_image
   - simple_sitemap
   - smart_trim
   - smtp
-  - token
-  - ultimate_cron
+  - ultimate_cron  
   - video_embed_field
+  - video_embed_wysiwyg  
+  - video_embed_media
   - views_bootstrap
   - views_infinite_scroll
   - viewsreference
-  - yoast_seo
-  # Custom.
-  - quick_start_features
+  - pathologic
+  - paragraphs
+  - paragraphs_previewer
+  - webform
+  - webform_bootstrap
 
 themes:
   # Contrib themes.
   - adminimal_theme_extras
   - bootstrap
   - drupalcoders_bootstrap
-
-# Information added by Drupal.org packaging script on 2018-01-17
-version: '8.x-1.x-dev'
-core: '8.x'
-project: 'quick_start'
-datestamp: 1516209202

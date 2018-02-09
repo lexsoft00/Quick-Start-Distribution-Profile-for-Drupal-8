@@ -12,53 +12,63 @@ settings:
     rows:
       -
         -
+          name: Links
+          items:
+            - DrupalLink
+            - Linkit
+            - DrupalUnlink
+            - '-'
+            - Undo
+            - Redo
+            - '-'
+            - Cut
+            - Copy
+            - Paste
+        -
           name: Formatting
           items:
             - Bold
             - Italic
             - Underline
             - Strike
+            - '-'
             - Superscript
+            - RemoveFormat
+            - Subscript
+            - '-'
+            - Blockquote
             - Outdent
             - Indent
             - HorizontalRule
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-            - Undo
-            - Redo
-            - Copy
-            - Cut
-            - Paste
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
+            - '-'
             - JustifyLeft
             - JustifyCenter
             - JustifyRight
             - JustifyBlock
+      -
         -
           name: Media
           items:
-            - Blockquote
-            - ImceImage
+            - media
             - DrupalImage
+            - '-'
             - Format
             - Styles
         -
           name: Tools
           items:
+            - Maximize
             - Source
-            - btbutton
             - ShowBlocks
+            - '-'
             - Table
-            - Glyphicons
-            - WidgetTemplateMenu
             - Accordion
+            - WidgetTemplateMenu
             - FontAwesome
             - widgetbootstrapLeftCol
             - widgetbootstrapRightCol
@@ -67,17 +77,19 @@ settings:
             - widgetbootstrapAccordion
             - widgetcommonBox
   plugins:
-    autogrow:
-      enable: 0
-      min_height: '250'
-      max_height: '600'
-      bottom_space: '50'
     language:
       language_list: un
     stylescombo:
       styles: ''
     linkit:
-      linkit_profile: ''
+      linkit_profile: linkit_all_nodes
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
 image_upload:
   status: true
   scheme: public

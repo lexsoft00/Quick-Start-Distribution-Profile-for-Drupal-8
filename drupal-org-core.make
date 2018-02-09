@@ -1,14 +1,4 @@
-# API
-# --------
-api: 2
-
-# Core
-# --------
-core: 8.x
-
-# Projects
-# --------
-projects:
-  # Core		
-  drupal:
-    version: 8.4.4
+api = 2
+core = 8.x
+projects[drupal][type] = core
+projects[drupal][version] = 8.4.4

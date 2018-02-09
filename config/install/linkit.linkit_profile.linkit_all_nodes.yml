@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: linkit_all_nodes
+label: 'Linkit: All Nodes'
+description: ''
+attributes: {  }
+matchers:
+  a7aa592a-d035-4b75-b0ab-9a3d435b2ab0:
+    uuid: a7aa592a-d035-4b75-b0ab-9a3d435b2ab0
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: true
+      include_unpublished: false

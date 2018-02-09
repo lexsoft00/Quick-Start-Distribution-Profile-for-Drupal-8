@@ -1,0 +1,23 @@
+name: 'Quick V Landing'
+description: 'Provides the basis for Landing Pages, which are built to include appealing stacked components that are visually separate.'
+type: module
+package: Quick
+core: 8.x
+dependencies:
+  - advanced_text_formatter
+  - ds
+  - entity_reference_revisions
+  - field
+  - field_group
+  - maxlength
+  - menu_ui
+  - metatag
+  - node
+  - paragraphs
+  - paragraphs_previewer
+  - path
+  - pathauto
+  - rabbit_hole
+  - user
+  - viewsreference
+  - yoast_seo

@@ -1,290 +1,256 @@
-# API
-# --------
-api: 2
-
-# Core
-# --------
-core: 8.x
-
-# Projects
-# --------
-defaults:
-  projects:
-    subdir: "contrib"
-    version: ~
-projects:  
-  ace_editor:
-    version: '1.0'
-  admin_toolbar:
-    version: '1.22'
-  adminimal_admin_toolbar:
-    version: '1.5'
-  advanced_text_formatter:
-    version: 1.0-beta3
-  autocomplete_deluxe:
-    version: 1.0-beta1
-  autogrow:
-    version: '1.0'
-  better_exposed_filters:
-    version: 3.0-alpha3
-  block_class:
-    version: 1.0-alpha1
-  bootstrap_layouts:
-    version: '5.0'
-  bootstrap_paragraphs:
-    version: 2.0-beta2
-    patch:
-    # Adding Bootstrap Grid and Removing Background Classes
-      - 'https://raw.githubusercontent.com/lexsoft00/dc_bootstrap_paragraphs.patch/master/dc_bootstrap_paragraphs.patch' 
-  captcha:
-    version: 1.0-beta1
-  ckeditor_accordion:
-    version: '1.0'
-  ckeditor_bootstrap_buttons:
-    version: '1.1'
-  ckeditor_widgets:
-    version: 1.x-dev
-    patch:
-    # Adding Bootstrap Grid and Removing Background Classes
-      - 'https://raw.githubusercontent.com/lexsoft00/dc_ckeditor_widgets.patch/master/dc_ckeditor_widgets.patch' 
-  coffee:
-    version: 1.0-beta2
-    patch:
-    # Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8
-      - 'https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch'
-    # Issue #2872093: Coffee css fixes in RTL  
-      - 'https://www.drupal.org/files/issues/2872093-10.patch'
-  colordialog:
-    version: '1.1'
-  config_update:
-    version: '1.5'
-  contact_formatter:
-    version: '1.0'
-  content_lock:
-    version: 1.0-alpha4
-    patch:
-    # Issue #2907026: Fixed Warning: When we do not have content types yet in the system.
-      - 'https://www.drupal.org/files/issues/2907026-7_0.patch'
-  crop:
-    version: '1.3'
-  ctools:
-    version: '3.0'
-  devel:
-    version: '1.2'
-  diff:
-    version: 1.0-rc1
-  dropzonejs:
-    version: 1.0-alpha8
-  ds:
-    version: '3.1'
-  embed:
-    version: '1.0'
-  entity:
-    version: 1.0-beta1
-  entity_browser:
-    version: '1.4'
-  entity_clone:
-    version: 1.0-alpha2
-  entity_embed:
-    version: 1.0-beta2
-  entity_reference_revisions:
-    version: '1.4'
-  entityqueue:
-    version: 1.0-alpha7
-  entityqueue_form_widget:
-    version: 1.0-beta3
-  features:
-    version: '3.5'
-  field_group:
-    version: 3.0-beta1
-  file_browser:
-    version: '1.1'
-  focal_point:
-    version: 1.0-beta5
-    patch:
-    # Issue #2915497: Missing schema for focal_point_scale_and_crop effect
-      - 'https://www.drupal.org/files/issues/2915497_3.patch'
-    # Issue #2916562: Broken image preview  
-      - 'https://www.drupal.org/files/issues/2916562-16.patch'
-  glyphicons:
-    version: '1.2'
-  google_analytics:
-    version: '2.2'
-  imageapi_optimize:
-    version: 2.0-alpha3
-  inline_entity_form:
-    version: 1.0-beta1
-  inline_responsive_images:
-    version: '2.1'
-  libraries_ui:
-    version: '1.0'
-  link_attributes:
-    version: '1.2'
-  linkit:
-    version: '4.3'
-  login_destination:
-    version: 1.x-dev
-  mailsystem:
-    version: '4.1'
-  masquerade:
-    version: 2.0-beta1
-  maxlength:
-    version: 1.0-beta1
-  media_entity:
-    version: '1.7'
-  media_entity_document:
-    version: '1.1'
-  media_entity_image:
-    version: '1.2'
-  menu_block:
-    version: '1.4'
-  menu_position:
-    version: 1.x-dev
-  metatag:
-    version: '1.4'
-  node_edit_protection:
-    version: 1.x-dev
-  imce:
-    version: '1.6'       
-  page_manager:
-    version: 4.0-beta2
-    patch:
-    # Issue #2624972: No configuration possible in UI for 301, 303, etc. HTTP responses
-      - 'https://www.drupal.org/files/issues/page_manager-redirect_location-2624972-30.patch'
-  panelizer:
-    version: '4.0'
-  panels:
-    version: '4.2'
-  paragraphs:
-    version: '1.2'
-    patch:
-    # Issue #2461695: Support translatable paragraph entity reference revision field
-      - 'https://www.drupal.org/files/issues/meta_support-2461695-222.patch'
-    # Issue #2868155: Add new hooks to allow easier editing of paragraph forms  
-      - 'https://www.drupal.org/files/issues/2868155-16.patch'
-    # Issue #2877927: Show add widget between paragraphs on hover  
-      - 'https://www.drupal.org/files/issues/2877927_29.patch'
-  paragraphs_previewer:
-    version: '1.0'
-    patch:
-    # Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch
-      - 'https://www.drupal.org/files/issues/2904917-2.patch'
-  pathauto:
-    version: '1.0'
-  pathologic:
-    version: 1.x-dev
-  rabbit_hole:
-    version: 1.0-beta4
-  recaptcha:
-    version: '2.2'
-  redirect:
-    version: '1.0'      
-  responsive_preview:
-    version: 1.0-alpha7
-  retina_images:
-    version: 1.x-dev
-  search_api:
-    version: '1.6'
-  simple_sitemap:
-    version: '2.11'
-  smart_trim:
-    version: '1.0'
-  smtp:
-    version: 1.0-beta3
-  token:
-    version: '1.1'
-  ultimate_cron:
-    version: 2.0-alpha2
-  userprotect:
-    version: '1.0'     
-  video_embed_field:
-    version: '1.5'
-  views_bootstrap:
-    version: '3.0'
-  views_infinite_scroll:
-    version: '1.5'
-  viewsreference:
-    version: '1.2'
-  webform:
-    version: 5.0-rc1
-  xmlsitemap:
-    version: 1.0-alpha2    
-  yoast_seo:
-    version: '1.3'
-    patch:
-    # Issue #2877613 by RajabNatshah: Add [ Text (plain, long) ] filed type [string_log] for yoast seo to use.
-      - 'https://www.drupal.org/files/issues/2877613-2_0.patch'
-  # Themes       
-  adminimal_theme_extras:
-    type: 'theme'
-    download:
-      type: 'git'
-      url: 'https://github.com/lexsoft00/adminimal_theme_extras.git'
-  bootstrap:
-    version: '3.7'
-  drupalcoders_bootstrap:
-    version: 1.0-alpha4
-       
-# Libraries
-# --------
-libraries:
-  autogrow:
-    download:
-      type: get
-      url: https://download.ckeditor.com/autogrow/releases/autogrow_4.7.3.zip
-    destination: libraries
-    directory_name: autogrow
-  colordialog:
-    download:
-      type: get
-      url: https://download.ckeditor.com/colordialog/releases/colordialog_4.7.3.zip
-    destination: libraries
-    directory_name: colordialog
-  glyphicons:
-    download:
-      type: get
-      url: https://download.ckeditor.com/glyphicons/releases/glyphicons_2.2.zip
-    destination: libraries
-    directory_name: glyphicons
-  dropzone:
-    download:
-      type: get
-      url: https://github.com/enyo/dropzone/archive/v4.3.0.tar.gz
-    destination: libraries
-    directory_name: dropzone    
-  blazy:
-    download:
-      type: get
-      url: https://github.com/dinbror/blazy/archive/1.8.2.tar.gz
-    destination: libraries
-    directory_name: blazy  
-  slick:
-    download:
-      type: get
-      url: https://github.com/kenwheeler/slick/archive/1.6.0.tar.gz
-    destination: libraries
-    directory_name: slick          
-  ace:
-    download:
-      type: get
-      url: http://github.com/ajaxorg/ace-builds/archive/v1.2.6.tar.gz
-    destination: libraries
-    directory_name: ace
-  imagesloaded:
-    download:
-      type: get
-      url: https://github.com/desandro/imagesloaded/archive/v3.2.0.zip
-    destination: libraries
-    directory_name: imagesloaded
-  btbutton:
-    download:
-      type: get
-      url: https://github.com/smonetti/btbutton/archive/master.zip
-    destination: libraries
-    directory_name: btbutton  
-  masonry:
-    download:
-      type: get
-      url: https://github.com/desandro/masonry/archive/v3.3.2.zip
-    destination: libraries
-    directory_name: masonry    
+api = 2
+core = 8.x
+defaults[projects][subdir] = "contrib"
+projects[ace_editor][type] = module
+projects[ace_editor][version] = 1.0
+;; Issue #2916832: Add support for calling libraries from the current active profile
+projects[ace_editor][patch][] = https://www.drupal.org/files/issues/2916832-4.patch
+projects[admin_toolbar][type] = module
+projects[admin_toolbar][version] = 1.23
+projects[adminimal_admin_toolbar][type] = module
+projects[adminimal_admin_toolbar][version] = 1.5
+projects[advanced_text_formatter][type] = module
+projects[advanced_text_formatter][version] = 1.0-beta3
+projects[autocomplete_deluxe][type] = module
+projects[autocomplete_deluxe][version] = 1.0-beta1
+projects[better_exposed_filters][type] = module
+projects[better_exposed_filters][version] = 3.0-alpha3
+projects[blazy][type] = module
+projects[blazy][version] = 1.0-rc2
+projects[block_class][type] = module
+projects[block_class][version] = 1.0-alpha1
+projects[bootstrap_layouts][type] = module
+projects[bootstrap_layouts][version] = 5.1
+projects[bootstrap_paragraphs][type] = module
+projects[bootstrap_paragraphs][version] = 2.0-beta2
+projects[captcha][type] = module
+projects[captcha][version] = 1.0-beta1
+projects[colorbox][type] = module
+projects[colorbox][version] = 1.4
+projects[colorbox_inline][type] = module
+projects[colorbox_inline][version] = 1.0
+projects[ckeditor_accordion][type] = module
+projects[ckeditor_accordion][version] = 1.0
+projects[ckeditor_widgets][type] = module
+projects[ckeditor_widgets][download][url] = https://git.drupal.org/project/ckeditor_widgets.git
+projects[ckeditor_widgets][download][revision] = 2d462637f8804b6d0b530604d0376e97a23a3b7f
+projects[ckeditor_widgets][download][branch] = 8.x-1.x
+;; Issue #2926160: Can't insert images inside Drupal CKEditor Boostrap Widgets editable area
+projects[ckeditor_widgets][patch][] = https://www.drupal.org/files/issues/ckeditor-widgets-images-2926160-3-8.patch
+projects[coffee][type] = module
+projects[coffee][version] = 1.0-beta2
+;; Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8
+projects[coffee][patch][] = https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch
+;; Issue #2872093: Coffee css fixes in RTL
+projects[coffee][patch][] = https://www.drupal.org/files/issues/2872093-10.patch
+projects[config_update][type] = module
+projects[config_update][version] = 1.5
+projects[config_filter][type] = module
+projects[config_filter][version] = 1.1
+projects[config_ignore][type] = module
+projects[config_ignore][version] = 2.1
+projects[contact_formatter][type] = module
+projects[contact_formatter][version] = 1.0
+projects[content_lock][type] = module
+projects[content_lock][version] = 1.0-alpha7
+projects[crop][type] = module
+projects[crop][version] = 1.5
+projects[ctools][type] = module
+projects[ctools][version] = 3.0
+;; Issue #2820783: Fix Block.php notices and warnings.
+projects[ctools][patch][] = https://www.drupal.org/files/issues/fixblockpager-2820783-27.patch
+projects[devel][type] = module
+projects[devel][version] = 1.2
+projects[diff][type] = module
+projects[diff][version] = 1.0-rc1
+projects[dropzonejs][type] = module
+projects[dropzonejs][version] = 1.0-alpha8
+projects[ds][type] = module
+projects[ds][version] = 3.1
+projects[embed][type] = module
+projects[embed][version] = 1.0
+projects[entity][type] = module
+projects[entity][version] = 1.0-beta1
+projects[entity_browser][type] = module
+projects[entity_browser][version] = 1.4
+projects[entity_browser_enhanced][type] = module
+projects[entity_browser_enhanced][version] = 1.0-beta6
+projects[entity_clone[type] = module
+projects[entity_clone][version] = 1.0-alpha2
+projects[entity_embed][type] = module
+projects[entity_embed][version] = 1.0-beta2
+projects[entity_reference_revisions][type] = module
+projects[entity_reference_revisions][version] = 1.4
+projects[entityqueue][type] = module
+projects[entityqueue][version] = 1.0-alpha7
+;; Issue #2145441: Option to create Entityqueue tab on Entity pages
+projects[entityqueue][patch][] = https://www.drupal.org/files/issues/2145441-32.patch
+;; Issue #2825773: Make Contextual links work for views using Entityqueue
+projects[entityqueue][patch][] = https://www.drupal.org/files/issues/2825773-23-outside_in_to_settings_tray.patch
+;; Issue #2916026: Only users with [Administer entityqueue] should be able to delete entityqueues
+projects[entityqueue][patch][] = https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-to-delete-entityqueues-2916026-3.patch
+;; Issue #2917308: Only users with [Administer entityqueue] should be able to edit (configure) entityqueues
+projects[entityqueue][patch][] = https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-edit-configure-entityqueues-2917308-2.patch
+projects[entityqueue_form_widget][type] = module
+projects[entityqueue_form_widget][version] = 1.0-beta3
+projects[extlink][type] = module
+projects[extlink][download][url] = https://git.drupal.org/project/extlink.git
+projects[extlink][download][revision] = 8a773a6c5519ccb167e18cc39d68551b30b0e4b3
+projects[extlink][download][branch] = 8.x-1.x
+projects[features][type] = module
+projects[features][version] = 3.5
+projects[field_group][type] = module
+projects[field_group][version] = 3.0-beta1
+projects[focal_point][type] = module
+projects[focal_point][version] = 1.0-beta5
+;; Issue #2915497: Missing schema for focal_point_scale_and_crop effect
+projects[focal_point][patch][] = https://www.drupal.org/files/issues/2915497_3.patch
+;; Issue #2916562: Broken image preview
+projects[focal_point][patch][] = https://www.drupal.org/files/issues/2916562-16.patch
+projects[google_analytics][type] = module
+projects[google_analytics][version] = 2.2
+projects[imageapi_optimize][type] = module
+projects[imageapi_optimize][version] = 2.0-alpha3
+projects[inline_entity_form][type] = module
+projects[inline_entity_form][version] = 1.0-beta1
+projects[inline_responsive_images][type] = module
+projects[inline_responsive_images][version] = 2.1
+projects[libraries_ui][type] = module
+projects[libraries_ui][version] = 1.0
+projects[link_attributes][type] = module
+projects[link_attributes][version] = 1.2
+projects[linkit][type] = module
+projects[linkit][version] = 4.3
+projects[mailsystem][type] = module
+projects[mailsystem][version] = 4.1
+projects[masquerade][type] = module
+projects[masquerade][version] = 2.0-beta1
+projects[maxlength][type] = module
+projects[maxlength][version] = 1.0-beta1
+projects[media_entity][type] = module
+projects[media_entity][version] = 1.7
+projects[media_entity_document][type] = module
+projects[media_entity_document][version] = 1.1
+projects[media_entity_image][type] = module
+projects[media_entity_image][version] = 1.2
+projects[menu_block][type] = module
+projects[menu_block][version] = 1.4
+projects[menu_position][type] = module
+projects[menu_position][download][url] = https://git.drupal.org/project/menu_position.git
+projects[menu_position][download][revision] = d134276b4bbd08b3c9678943d0225fbef7dd05b5
+projects[menu_position][download][branch] = 8.x-1.x
+projects[metatag][type] = module
+projects[metatag][version] = 1.4
+projects[node_edit_protection][type] = module
+projects[node_edit_protection][download][url] = https://git.drupal.org/project/node_edit_protection.git
+projects[node_edit_protection][download][revision] = 902339c08222f838030c07aaea23bdc51ababebd
+projects[node_edit_protection][download][branch] = 8.x-1.x
+projects[page_manager][type] = module
+projects[page_manager][version] = 4.0-beta2
+;; Issue #2624972: No configuration possible in UI for 301, 303, etc. HTTP responses
+projects[page_manager][patch][] = https://www.drupal.org/files/issues/page_manager-redirect_location-2624972-30.patch
+projects[panelizer][type] = module
+projects[panelizer][version] = 4.0
+projects[panels][type] = module
+projects[panels][version] = 4.2
+projects[paragraphs[type] = module
+projects[paragraphs][version] = 1.2
+;; Issue #2461695: Support translatable paragraph entity reference revision field
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support-2461695-222.patch
+;; Issue #2868155: Add new hooks to allow easier editing of paragraph forms
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2868155-16.patch
+;; Issue #2877927: Show add widget between paragraphs on hover
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2877927_29.patch
+;; Issue #2909416: Hide duplicate action while translating.
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2909416-2.patch
+;; Issue #2924774: Let Editors add/delete/clone paragraphs When [Editing a translation]
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2924774-4.patch
+projects[paragraphs_previewer][type] = module
+projects[paragraphs_previewer][version] = 1.0
+;; Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch
+projects[paragraphs_previewer][patch][] = https://www.drupal.org/files/issues/2904917-2.patch
+projects[pathauto][type] = module
+projects[pathauto][version] = 1.0
+projects[pathologic][type] = module
+projects[pathologic][download][url] = https://git.drupal.org/project/pathologic.git
+projects[pathologic][download][revision] = e0473546e51cbeaa3acb34e3208a0c503ca85613
+projects[pathologic][download][branch] = 8.x-1.x
+projects[quick_v_media][type] = module
+projects[quick_v_media][version] = 1.0-alpha1
+projects[quick_v_bootstrap_paragraphs][type] = module
+projects[quick_v_bootstrap_paragraphs][version] = 1.0-alpha3
+projects[rabbit_hole][type] = module
+projects[rabbit_hole][version] = 1.0-beta4
+projects[recaptcha][type] = module
+projects[recaptcha][version] = 2.2
+projects[redirect][type] = module
+projects[redirect][version] = 1.0
+projects[responsive_preview][type] = module
+projects[responsive_preview][version] = 1.0-alpha7
+projects[retina_images][type] = module
+projects[retina_images][download][url] = https://git.drupal.org/project/retina_images.git
+projects[retina_images][download][revision] = 20aa2a1f101e92dced5e373dac5300e9269619c7
+projects[retina_images][download][branch] = 8.x-1.x
+;; Issue #2682459: Support for focal point
+projects[retina_images][patch][] = https://www.drupal.org/files/issues/edit_support_for_focal-2682459-2.patch
+;; Issue #2761359: Remove @file tag docblock from all the .php files.
+projects[retina_images][patch][] = https://www.drupal.org/files/issues/2761359-2.patch
+projects[schema_metatag][type] = module
+projects[schema_metatag][version] = 1.0
+projects[search_api][type] = module
+projects[search_api][version] = 1.6
+projects[simple_sitemap][type] = module
+projects[simple_sitemap][version] = 2.11
+projects[slick][type] = module
+projects[slick][version] = 1.0
+projects[slick_media][type] = module
+projects[slick_media][version] = 1.0
+projects[slick_views][type] = module
+projects[slick_views][version] = 1.0-rc2
+projects[smart_trim][type] = module
+projects[smart_trim][version] = 1.1
+projects[smtp][type] = module
+projects[smtp][version] = 1.0-beta3
+projects[token][type] = module
+projects[token][version] = 1.1
+projects[ultimate_cron][type] = module
+projects[ultimate_cron][version] = 2.0-alpha2
+projects[userprotect][type] = module
+projects[userprotect][version] = 1.0
+projects[video_embed_field][type] = module
+projects[video_embed_field][version] = 1.5
+projects[views_bootstrap][type] = module
+projects[views_bootstrap][version] = 3.0
+projects[views_infinite_scroll][type] = module
+projects[views_infinite_scroll][version] = 1.5
+projects[viewsreference][type] = module
+projects[viewsreference][version] = 1.2
+projects[webform][type] = module
+projects[webform][version] = 5.0-rc1
+projects[xmlsitemap][type] = module
+projects[xmlsitemap][version] = 1.0-alpha2
+projects[yoast_seo][type] = module
+projects[yoast_seo][version] = 1.3
+;; Issue #2877613: Add [ Text (plain, long) ] filed type [string_log] for yoast seo to use.
+projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2877613-2_0.patch
+projects[bootstrap][type] = theme
+projects[bootstrap][version] = 3.9
+projects[drupalcoders_bootstrap][type] = theme
+projects[drupalcoders_bootstrap][version] = 1.0-beta01
+libraries[dropzone][download][type] = get
+libraries[dropzone][download][url] = "https://github.com/enyo/dropzone/archive/v4.3.0.tar.gz"
+libraries[dropzone][destination] = "libraries"
+libraries[blazy][download][type] = get
+libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.2.tar.gz"
+libraries[blazy][destination] = "libraries"
+libraries[slick][download][type] = get
+libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.6.0.tar.gz"
+libraries[slick][destination] = "libraries"
+libraries[ace][directory_name] = "ace"
+libraries[ace][download][type] = "get"
+libraries[ace][download][url] = "http://github.com/ajaxorg/ace-builds/archive/v1.2.6.tar.gz"
+libraries[ace][destination] = "libraries"
+libraries[colorbox][directory_name] = "colorbox"
+libraries[colorbox][download][type] = "get"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.tar.gz"
+libraries[colorbox][destination] = "libraries"
