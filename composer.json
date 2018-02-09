@@ -125,13 +125,12 @@
       "dev-8.x-4.x": "8.4.x-dev"
     },
     "installer-paths": {
-        "core": ["type:drupal-core"],
-        "modules/contrib/{$name}": ["type:drupal-module"],
-        "profiles/{$name}": ["type:drupal-profile"],
-        "themes/contrib/{$name}": ["type:drupal-theme"],
-        "drush/contrib/{$name}": ["type:drupal-drush"],
-        "modules/custom/{$name}": ["type:drupal-custom-module"],
-        "themes/custom/{$name}": ["type:drupal-custom-theme"]
+      "core": ["drupal/core"],
+      "profiles/{$name}": ["type:drupal-profile"],
+      "modules/contrib/{$name}": ["type:drupal-module"],
+      "themes/contrib/{$name}": ["type:drupal-theme"],
+      "libraries/{$name}": ["type:drupal-library"],
+      "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "drupal-libraries": {
       "library-directory": "libraries",
