@@ -189,7 +189,7 @@
       "profiles/{$name}": ["type:drupal-profile"],
       "modules/contrib/{$name}": ["type:drupal-module"],
       "themes/contrib/{$name}": ["type:drupal-theme"],
-      "profiles/quick_start/libraries/{$name}": ["type:drupal-library"],
+      "libraries/{$name}": ["type:drupal-library"],
       "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "drupal-libraries": {

@@ -107,7 +107,7 @@ function _quick_start_install_module_batch($module, $module_name, &$context) {
 
 /**
  * Implements quick_start_install_tasks_alter().
- */
+ *
 function quick_start_install_tasks_alter(&$tasks, $install_state) {
   foreach ($install_state as $state) {
     if ($state === 'install_bootstrap_full') {
@@ -126,7 +126,7 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
  *   - Source folder with files.
  * @param string $dst
  *   - Destination folder.
- */
+ *
 function quick_start_recurse_copy($src, $dst) {
   $dir = opendir($src);
   @mkdir($dst);
@@ -142,6 +142,7 @@ function quick_start_recurse_copy($src, $dst) {
   }
   closedir($dir);
 }
+*/
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
