@@ -180,11 +180,6 @@
     "ajaxorg/ace-builds": "v1.2.6",
     "jackmoore/colorbox": "1.6.4"
   },
-  "autoload": {
-    "psr-4": {
-      "Quick\\": "src"
-    }
-  },
   "extra": {
     "branch-alias": {
       "dev-8.x-4.x": "8.4.x-dev"
