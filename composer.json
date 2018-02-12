@@ -69,10 +69,10 @@
       "type": "package",
       "package": {
       "name": "jackmoore/colorbox",
-      "version": "1.x",
+      "version": "1.6.4",
       "type": "drupal-library",
       "dist": {
-        "url": "https://github.com/jackmoore/colorbox/archive/1.x.zip",
+        "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
         "type": "zip"
         }
       }
@@ -178,7 +178,7 @@
     "quick_start/blazy": "1.8.2.1",
     "kenwheeler/slick": "1.6.0",
     "ajaxorg/ace-builds": "v1.2.6",
-    "jackmoore/colorbox": "1.x"
+    "jackmoore/colorbox": "1.6.4"
   },
   "autoload": {
     "psr-4": {
