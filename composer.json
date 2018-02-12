@@ -200,11 +200,11 @@
     "drupal-libraries": {
       "library-directory": "libraries",
       "libraries": [
-          {"name": "dropzone","package": "quick_start/dropzone"},
-          {"name": "blazy", "package": "quick_start/blazy"},
-          {"name": "slick", "package": "quick_start/slick"},
-          {"name": "ace", "package": "quick_start/ace"},
-          {"name": "colorbox", "package": "quick_start/colorbox"}
+          {"name": "dropzone","package": "enyo/dropzone"},
+          {"name": "blazy", "package": "dinbror/blazy"},
+          {"name": "slick", "package": "kenwheeler/slick"},
+          {"name": "ace", "package": "ajaxorg/ace"},
+          {"name": "colorbox", "package": "jackmoore/colorbox"}
       ]
     },
     "enable-patching": true,
