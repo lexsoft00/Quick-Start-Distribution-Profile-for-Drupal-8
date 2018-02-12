@@ -60,7 +60,7 @@
       "version": "v1.2.6",
       "type": "drupal-library",
       "dist": {
-        "url": "http://github.com/ajaxorg/ace-builds/archive/v1.2.6.zip",
+        "url": "https://github.com/ajaxorg/ace-builds/archive/v1.2.6.zip",
         "type": "zip"
         }
       }
@@ -175,7 +175,7 @@
     "drupal/bootstrap": "3.7", 
     "drupal/drupalcoders_bootstrap": "1.0-beta01",
     "enyo/dropzone": "v4.3.0",
-    "quick_start/blazy": "1.8.2.1",
+    "dinbror/blazy": "1.8.2",
     "kenwheeler/slick": "1.6.0",
     "ajaxorg/ace-builds": "v1.2.6",
     "jackmoore/colorbox": "1.6.4"
@@ -201,7 +201,7 @@
       "library-directory": "libraries",
       "libraries": [
           {"name": "dropzone","package": "enyo/dropzone"},
-          {"name": "blazy", "package": "quick_start/blazy"},
+          {"name": "blazy", "package": "dinbror/blazy"},
           {"name": "slick", "package": "kenwheeler/slick"},
           {"name": "ace", "package": "ajaxorg/ace"},
           {"name": "colorbox", "package": "jackmoore/colorbox"}
