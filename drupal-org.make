@@ -166,7 +166,7 @@ projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2909416-2.pa
 ;; Issue #2924774: Let Editors add/delete/clone paragraphs When [Editing a translation]
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2924774-4.patch
 projects[paragraphs_previewer][type] = module
-projects[paragraphs_previewer][version] = 1.0
+projects[paragraphs_previewer][version] = 1.2
 ;; Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch
 projects[paragraphs_previewer][patch][] = https://www.drupal.org/files/issues/2904917-2.patch
 projects[pathauto][type] = module
@@ -214,7 +214,7 @@ projects[smtp][version] = 1.0-beta3
 projects[token][type] = module
 projects[token][version] = 1.1
 projects[ultimate_cron][type] = module
-projects[ultimate_cron][version] = 2.0-alpha2
+projects[ultimate_cron][version] = 2.0-alpha3
 projects[userprotect][type] = module
 projects[userprotect][version] = 1.0
 projects[video_embed_field][type] = module
@@ -236,7 +236,7 @@ projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2877613-2_0.p
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.9
 projects[drupalcoders_bootstrap][type] = theme
-projects[drupalcoders_bootstrap][version] = 1.0-beta01
+projects[drupalcoders_bootstrap][version] = 1.0-beta02
 libraries[dropzone][download][type] = get
 libraries[dropzone][download][url] = "https://github.com/enyo/dropzone/archive/v4.3.0.tar.gz"
 libraries[dropzone][destination] = "libraries"
