@@ -6,7 +6,6 @@ dependencies:
     - editor
     - entity_embed
     - inline_responsive_images
-    - pathologic
 name: 'Filtered HTML'
 format: filtered_html
 weight: 0
@@ -205,16 +204,6 @@ filters:
       responsive_style_de2e_standard: '0'
       responsive_style_de2e_traditional: '0'
       responsive_style_default: '0'
-  filter_pathologic:
-    id: filter_pathologic
-    provider: pathologic
-    status: true
-    weight: 50
-    settings:
-      settings_source: global
-      local_settings:
-        protocol_style: full
-        local_paths: ''
   entity_embed:
     id: entity_embed
     provider: entity_embed

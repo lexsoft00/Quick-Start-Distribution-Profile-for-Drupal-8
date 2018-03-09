@@ -107,16 +107,33 @@ function _quick_start_install_module_batch($module, $module_name, &$context) {
 
 /**
  * Implements quick_start_install_tasks_alter().
- *
+
 function quick_start_install_tasks_alter(&$tasks, $install_state) {
   foreach ($install_state as $state) {
     if ($state === 'install_bootstrap_full') {
       $source = 'profiles/quick_start/libraries/';
       $res = 'libraries/';
-      quick_start_recurse_copy($source, $res);
-      drupal_get_messages();
+      // Do not copy if the folder already exists
+      if(FALSE == folder_exist($res)){
+        quick_start_recurse_copy($source, $res);
+        drupal_get_messages();
+      }
     };
   }
+}
+
+/**
+ * Checks if a folder exist and return canonicalized absolute pathname (sort version)
+ * @param string $folder the path being checked.
+ * @return mixed returns the canonicalized absolute pathname on success otherwise FALSE is returned
+
+function folder_exist($folder)
+{
+    // Get canonicalized absolute pathname
+    $path = realpath($folder);
+
+    // If it exist, check if it's a directory
+    return ($path !== false AND is_dir($path)) ? $path : false;
 }
 
 /**
@@ -126,7 +143,7 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
  *   - Source folder with files.
  * @param string $dst
  *   - Destination folder.
- *
+
 function quick_start_recurse_copy($src, $dst) {
   $dir = opendir($src);
   @mkdir($dst);
@@ -142,7 +159,7 @@ function quick_start_recurse_copy($src, $dst) {
   }
   closedir($dir);
 }
-*/
+ */
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().

@@ -83,7 +83,7 @@
     "cweagans/composer-patches": "1.6.4",
     "drupal-composer/drupal-scaffold": "2.4.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.4.4",    
+    "drupal/core": "8.5.0",    
     "drupal/ace_editor": "1.0",
     "drupal/admin_toolbar": "1.23",
     "drupal/adminimal_admin_toolbar": "1.5",
@@ -103,7 +103,7 @@
     "drupal/config_filter": "1.1",
     "drupal/config_ignore": "2.1",    
     "drupal/contact_formatter": "1.0",
-    "drupal/content_lock": "1.0-alpha7",
+    "drupal/content_lock": "1.0-alpha8",
     "drupal/contribute": "1.0-beta7",    
     "drupal/crop": "1.5",
     "drupal/ctools": "3.0",
@@ -121,9 +121,9 @@
     "drupal/entityqueue": "1.0-alpha7",
     "drupal/entityqueue_form_widget": "1.0-beta3",
     "drupal/extlink": "1.x-dev#8a773a6c5519ccb167e18cc39d68551b30b0e4b3",    
-    "drupal/features": "3.5",
+    "drupal/features": "3.7",
     "drupal/field_group": "3.0-beta1",
-    "drupal/focal_point": "1.0-beta5",
+    "drupal/focal_point": "1.0-beta6",
     "drupal/google_analytics": "2.2",
     "drupal/imageapi_optimize": "2.0-alpha3",
     "drupal/inline_entity_form": "1.0-beta1",
@@ -234,14 +234,14 @@
         "https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-edit-configure-entityqueues-2917308-2.patch"
       },
       "drupal/focal_point": {
-        "Issue #2915497: Missing schema for focal_point_scale_and_crop effect":
-        "https://www.drupal.org/files/issues/2915497_3.patch",
         "Issue #2916562: Broken image preview":
         "https://www.drupal.org/files/issues/2916562-16.patch"
       },                              
       "drupal/page_manager": {
         "Issue #2624972: No configuration possible in UI for 301, 303, etc. HTTP responses":
-        "https://www.drupal.org/files/issues/page_manager-redirect_location-2624972-30.patch"
+        "https://www.drupal.org/files/issues/page_manager-redirect_location-2624972-30.patch",
+        "Issue #2918564: Update 'page_manager.variant_route_filter' service according to core changes":
+        "https://www.drupal.org/files/issues/2918564-22.patch"       
       },
       "drupal/paragraphs": {
         "Issue #2461695: Support translatable paragraph entity reference revision field":

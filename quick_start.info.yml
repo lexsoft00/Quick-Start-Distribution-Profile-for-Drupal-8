@@ -1,6 +1,6 @@
 name: Quick Start
 type: profile
-description: Quick Start for Drupal 8.
+description: Quick Start for Drupal 8, best used with Aegir Hosting.
 core: 8.x
 distribution:
   name: Quick Start
@@ -9,12 +9,14 @@ dependencies:
   # core
   - block
   - block_content
+  - big_pipe
   - breakpoint
   - ckeditor
   - color
   - config
   - contextual
   - datetime
+  - dblog
   - dynamic_page_cache
   - editor
   - filter
@@ -120,9 +122,9 @@ dependencies:
   - views_bootstrap
   - views_infinite_scroll
   - viewsreference
-  - pathologic
   - paragraphs
   - paragraphs_previewer
+  - contribute
   - webform
   - webform_bootstrap
 
