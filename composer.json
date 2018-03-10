@@ -259,6 +259,10 @@
         "Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch":
         "https://www.drupal.org/files/issues/2904917-2.patch"
       },
+      "drupal/pathologic": {
+        "Issue #2927759: Update hooks for D7 present in D8 version of module.":
+        "https://www.drupal.org/files/issues/2927759-8.patch"
+       },      
       "drupal/retina_images": {
         "Issue #2682459: Support for focal point":
         "https://www.drupal.org/files/issues/edit_support_for_focal-2682459-2.patch",

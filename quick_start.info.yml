@@ -109,6 +109,7 @@ dependencies:
   - panels 
   - panels_ipe   
   - panelizer  
+  - pathologic
   - rabbit_hole
   - recaptcha  
   - responsive_image
