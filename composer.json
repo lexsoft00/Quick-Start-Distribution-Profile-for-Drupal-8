@@ -238,10 +238,6 @@
         "Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch":
         "https://www.drupal.org/files/issues/2904917-2.patch"
       },
-      "drupal/pathologic": {
-        "Issue #2927759: Update hooks for D7 present in D8 version of module.":
-        "https://www.drupal.org/files/issues/2927759-8.patch"
-       },
       "drupal/yoast_seo": {
         "Issue #2877613: Add [ Text (plain, long) ] filed type [string_log] for yoast seo to use.":
         "https://www.drupal.org/files/issues/2877613-2_0.patch"
