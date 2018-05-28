@@ -153,7 +153,6 @@
     "drupal/recaptcha": "2.2",
     "drupal/redirect": "1.0",
     "drupal/responsive_preview": "1.0-alpha7",
-    "drupal/retina_images": "1.x-dev#20aa2a1f101e92dced5e373dac5300e9269619c7",
     "drupal/schema_metatag": "1.0",    
     "drupal/search_api": "1.8",
     "drupal/simple_sitemap": "2.12",
