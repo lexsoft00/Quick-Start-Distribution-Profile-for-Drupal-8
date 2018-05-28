@@ -235,20 +235,6 @@
         "Issue #2916562: Broken image preview":
         "https://www.drupal.org/files/issues/2916562-16.patch"
       },                              
-      "drupal/page_manager": {
-        "Issue #2624972: No configuration possible in UI for 301, 303, etc. HTTP responses":
-        "https://www.drupal.org/files/issues/page_manager-redirect_location-2624972-30.patch",
-        "Issue #2918564: Update 'page_manager.variant_route_filter' service according to core changes":
-        "https://www.drupal.org/files/issues/2918564-22.patch"       
-      },
-      "drupal/paragraphs": {
-        "Issue #2461695: Support translatable paragraph entity reference revision field":
-        "https://www.drupal.org/files/issues/meta_support-2461695-222.patch",
-        "Issue #2877927: Show add widget between paragraphs on hover":
-        "https://www.drupal.org/files/issues/2877927_29.patch",
-        "Issue #2924774: Let Editors add/delete/clone paragraphs When [Editing a translation]":
-        "https://www.drupal.org/files/issues/2924774-4.patch"
-      },
       "drupal/paragraphs_previewer": {
         "Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch":
         "https://www.drupal.org/files/issues/2904917-2.patch"
