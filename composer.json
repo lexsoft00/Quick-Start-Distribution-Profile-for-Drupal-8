@@ -85,11 +85,11 @@
     "drupal/drupal-library-installer-plugin": "0.3",
     "drupal/core": "8.5.3",    
     "drupal/ace_editor": "1.0",
-    "drupal/admin_toolbar": "1.23",
-    "drupal/adminimal_admin_toolbar": "1.5",
+    "drupal/admin_toolbar": "1.24",
+    "drupal/adminimal_admin_toolbar": "1.7",
     "drupal/advanced_text_formatter": "1.0-beta3",
     "drupal/autocomplete_deluxe": "1.0-beta1",
-    "drupal/better_exposed_filters": "3.0-alpha3",
+    "drupal/better_exposed_filters": "3.0-alpha4",
     "drupal/blazy": "1.0-rc2",
     "drupal/block_class": "1.0-alpha1",
     "drupal/bootstrap_layouts": "5.1",
@@ -100,7 +100,7 @@
     "drupal/ckeditor_widgets": "1.x-dev#2d462637f8804b6d0b530604d0376e97a23a3b7f",
     "drupal/coffee": "1.0-beta2",
     "drupal/config_update": "1.5",
-    "drupal/config_filter": "1.1",
+    "drupal/config_filter": "1.2",
     "drupal/config_ignore": "2.1",    
     "drupal/contact_formatter": "1.0",
     "drupal/content_lock": "1.0-alpha8",
@@ -117,37 +117,36 @@
     "drupal/entity_browser_enhanced": "1.0-beta6",    
     "drupal/entity_clone": "1.0-alpha2",
     "drupal/entity_embed": "1.0-beta2",
-    "drupal/entity_reference_revisions": "1.4",
+    "drupal/entity_reference_revisions": "1.5",
     "drupal/entityqueue": "1.0-alpha7",
     "drupal/entityqueue_form_widget": "1.0-beta3",
-    "drupal/extlink": "1.x-dev#8a773a6c5519ccb167e18cc39d68551b30b0e4b3",    
+    "drupal/extlink": "1.1",
     "drupal/features": "3.7",
     "drupal/field_group": "3.0-beta1",
     "drupal/focal_point": "1.0-beta6",
     "drupal/google_analytics": "2.2",
     "drupal/imageapi_optimize": "2.0-alpha3",
-    "drupal/inline_entity_form": "1.0-beta1",
+    "drupal/inline_entity_form": "1.0-rc1",
     "drupal/inline_responsive_images": "2.1",
     "drupal/libraries_ui": "1.0",
-    "drupal/link_attributes": "1.2",
+    "drupal/link_attributes": "1.3",
     "drupal/linkit": "4.3",
     "drupal/mailsystem": "4.1",
     "drupal/masquerade": "2.0-beta1",
     "drupal/maxlength": "1.0-beta1",
     "drupal/media_entity": "1.7",
     "drupal/media_entity_document": "1.1",
-    "drupal/media_entity_image": "1.2",
-    "drupal/menu_block": "1.4",
-    "drupal/menu_position": "1.x-dev#d134276b4bbd08b3c9678943d0225fbef7dd05b5",
-    "drupal/metatag": "1.4",    
+    "drupal/media_entity_image": "1.3",
+    "drupal/menu_block": "1.5",
+    "drupal/metatag": "1.5",
     "drupal/node_edit_protection": "1.x-dev#902339c08222f838030c07aaea23bdc51ababebd",
-    "drupal/page_manager": "4.0-beta2",
-    "drupal/panelizer": "4.0",
-    "drupal/panels": "4.2",
-    "drupal/paragraphs": "1.2",
+    "drupal/page_manager": "4.0-beta3",
+    "drupal/panelizer": "4.1",
+    "drupal/panels": "4.3",
+    "drupal/paragraphs": "1.3",
     "drupal/paragraphs_previewer": "1.2",
-    "drupal/pathauto": "1.0",
-    "drupal/pathologic": "1.x-dev#4f9f3fdcf1e0b224c4d8650e383a769f40abf9bf",    
+    "drupal/pathauto": "1.2",
+    "drupal/pathologic": "1.0-alpha1",
     "drupal/quick_v_media": "1.0-alpha1",
     "drupal/quick_v_bootstrap_paragraphs": "1.0-alpha3",
     "drupal/rabbit_hole": "1.0-beta4",
@@ -156,8 +155,8 @@
     "drupal/responsive_preview": "1.0-alpha7",
     "drupal/retina_images": "1.x-dev#20aa2a1f101e92dced5e373dac5300e9269619c7",
     "drupal/schema_metatag": "1.0",    
-    "drupal/search_api": "1.7",
-    "drupal/simple_sitemap": "2.11",
+    "drupal/search_api": "1.8",
+    "drupal/simple_sitemap": "2.12",
     "drupal/slick": "1.0",
     "drupal/slick_views": "1.0-rc2",
     "drupal/slick_media": "1.0",    
@@ -170,8 +169,7 @@
     "drupal/views_bootstrap": "3.0",
     "drupal/views_infinite_scroll": "1.5",
     "drupal/viewsreference": "1.2",
-    "drupal/webform": "5.0-rc3",
-    "drupal/xmlsitemap": "1.0-alpha2",
+    "drupal/webform": "5.0-rc12",
     "drupal/yoast_seo": "1.3",
     "drupal/bootstrap": "3.7", 
     "drupal/drupalcoders_bootstrap": "1.0-beta04",
@@ -246,12 +244,8 @@
       "drupal/paragraphs": {
         "Issue #2461695: Support translatable paragraph entity reference revision field":
         "https://www.drupal.org/files/issues/meta_support-2461695-222.patch",
-        "Issue #2868155: Add new hooks to allow easier editing of paragraph forms":
-        "https://www.drupal.org/files/issues/2868155-16.patch",
         "Issue #2877927: Show add widget between paragraphs on hover":
         "https://www.drupal.org/files/issues/2877927_29.patch",
-        "Issue #2909416: Hide duplicate action while translating.":
-        "https://www.drupal.org/files/issues/2909416-2.patch",
         "Issue #2924774: Let Editors add/delete/clone paragraphs When [Editing a translation]":
         "https://www.drupal.org/files/issues/2924774-4.patch"
       },
@@ -262,13 +256,7 @@
       "drupal/pathologic": {
         "Issue #2927759: Update hooks for D7 present in D8 version of module.":
         "https://www.drupal.org/files/issues/2927759-8.patch"
-       },     
-      "drupal/retina_images": {
-        "Issue #2682459: Support for focal point":
-        "https://www.drupal.org/files/issues/edit_support_for_focal-2682459-2.patch",
-        "Issue #2761359: Remove @file tag docblock from all the .php files":
-        "https://www.drupal.org/files/issues/2761359-2.patch"        
-      },
+       },
       "drupal/yoast_seo": {
         "Issue #2877613: Add [ Text (plain, long) ] filed type [string_log] for yoast seo to use.":
         "https://www.drupal.org/files/issues/2877613-2_0.patch"
