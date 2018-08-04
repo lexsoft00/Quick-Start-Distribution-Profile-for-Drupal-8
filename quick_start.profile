@@ -102,64 +102,10 @@ function _quick_start_install_module_batch($module, $module_name, &$context) {
   set_time_limit(0);
   \Drupal::service('module_installer')->install($module);
   $context['results'][] = $module;
-  $context['message'] = t('Install %module_name module.', ['%module_name' => $module_name]);
+  $context['message'] = t(
+    'Install %module_name module.', ['%module_name' => $module_name]
+  );
 }
-
-/**
- * Implements quick_start_install_tasks_alter().
-
-function quick_start_install_tasks_alter(&$tasks, $install_state) {
-  foreach ($install_state as $state) {
-    if ($state === 'install_bootstrap_full') {
-      $source = 'profiles/quick_start/libraries/';
-      $res = 'libraries/';
-      // Do not copy if the folder already exists
-      if(FALSE == folder_exist($res)){
-        quick_start_recurse_copy($source, $res);
-        drupal_get_messages();
-      }
-    };
-  }
-}
-
-/**
- * Checks if a folder exist and return canonicalized absolute pathname (sort version)
- * @param string $folder the path being checked.
- * @return mixed returns the canonicalized absolute pathname on success otherwise FALSE is returned
-
-function folder_exist($folder)
-{
-    // Get canonicalized absolute pathname
-    $path = realpath($folder);
-
-    // If it exist, check if it's a directory
-    return ($path !== false AND is_dir($path)) ? $path : false;
-}
-
-/**
- * Recursive copy.
- *
- * @param string $src
- *   - Source folder with files.
- * @param string $dst
- *   - Destination folder.
-
-function quick_start_recurse_copy($src, $dst) {
-  $dir = opendir($src);
-  @mkdir($dst);
-  while (FALSE !== ($file = readdir($dir))) {
-    if (($file != '.') && ($file != '..')) {
-      if (is_dir($src . '/' . $file)) {
-        quick_start_recurse_copy($src . '/' . $file, $dst . '/' . $file);
-      }
-      else {
-        copy($src . '/' . $file, $dst . '/' . $file);
-      }
-    }
-  }
-  closedir($dir);
-}
- */
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
