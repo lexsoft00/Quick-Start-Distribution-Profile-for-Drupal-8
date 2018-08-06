@@ -182,7 +182,7 @@
   },
   "extra": {
     "branch-alias": {
-      "8.x-1.x": "dev-8.x-1.x"
+      "dev-8.x-1.x": "dev-8.x-1.x"
     },
     "installer-paths": {
       "docroot/core": ["drupal/core"],
