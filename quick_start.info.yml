@@ -64,7 +64,7 @@ dependencies:
   - config_update
   - content_lock  
   - ckeditor_accordion
-  - ckeditor_widgets    
+  - ckeditor_bootstrap_grid
   - crop
   - ctools
   - ctools_block

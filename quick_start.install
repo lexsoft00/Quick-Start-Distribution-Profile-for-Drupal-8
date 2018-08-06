@@ -86,3 +86,15 @@ function quick_start_install() {
   \Drupal::entityDefinitionUpdateManager()->applyUpdates();
   // Can add code in here to make nodes, terms, etc.
 }
+
+
+/**
+ *  Update editor filtered html button settings.
+ */
+function quick_start_update_8001() {
+  $editor_editor_filtered_html_config = \Drupal::service('config.factory')->getEditable('editor.editor.filtered_html');
+  $editor_editor_filtered_html_config_file = \Drupal::root() . '/' . drupal_get_path('profile', 'quick_start') . '/config/install/editor.editor.filtered_html.yml';
+  $editor_editor_filtered_html_config_content = file_get_contents($editor_editor_filtered_html_config_file);
+  $editor_editor_filtered_html_config_content_data = (array) Yaml::parse($editor_editor_filtered_html_config_content);
+  $editor_editor_filtered_html_config->setData($editor_editor_filtered_html_config_content_data)->save();
+}

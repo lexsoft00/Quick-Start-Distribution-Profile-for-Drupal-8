@@ -69,13 +69,11 @@ settings:
             - Table
             - Accordion
             - WidgetTemplateMenu
-            - FontAwesome
             - widgetbootstrapLeftCol
             - widgetbootstrapRightCol
             - widgetbootstrapTwoCol
             - widgetbootstrapThreeCol
-            - widgetbootstrapAccordion
-            - widgetcommonBox
+
   plugins:
     language:
       language_list: un
