@@ -6,8 +6,6 @@ defaults:
     subdir: 'contrib'
 
 projects:
-  drupal:
-    version: '8.5.6'	
   ace_editor:
     version: '1.0'  
     patch:
@@ -16,7 +14,7 @@ projects:
   admin_toolbar:
     version: '1.24'
   adminimal_admin_toolbar:
-    version: '1.7'
+    version: '1.8'
   advanced_text_formatter:
     version: 1.0-beta3
   autocomplete_deluxe:
