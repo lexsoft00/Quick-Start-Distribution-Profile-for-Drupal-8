@@ -22,6 +22,10 @@
       "url": "https://packages.drupal.org/8"
     },
     {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    {
       "type": "package",
       "package": {
       "name": "enyo/dropzone",
@@ -82,8 +86,26 @@
       }
     }                      
   ],
+  "scripts": {
+    "drupal-scaffold": "QuickStart\\DrupalScaffold\\Plugin::scaffold",
+    "post-install-cmd": [
+      "QuickStart\\composer\\ScriptHandler::createRequiredFiles",
+      "QuickStart\\composer\\ScriptHandler::removeGitDirectories",
+      "@composer drupal-scaffold"
+    ],
+    "post-update-cmd": [
+      "QuickStart\\composer\\ScriptHandler::createRequiredFiles",
+      "QuickStart\\composer\\ScriptHandler::removeGitDirectories"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "QuickStart\\": "src"
+    }
+  },
   "require": {
     "composer/installers": "1.5.0",
+    "oomphinc/composer-installers-extender": "1.1.2",
     "cweagans/composer-patches": "1.6.4",
     "drupal-composer/drupal-scaffold": "2.4.0",
     "drupal/drupal-library-installer-plugin": "0.3",
@@ -100,7 +122,7 @@
     "drupal/captcha": "1.0-beta1",
     "drupal/colorbox": "1.4",    
     "drupal/ckeditor_accordion": "1.1",
-    "drupal/ckeditor_widgets": "1.x-dev#2d462637f8804b6d0b530604d0376e97a23a3b7f",
+    "drupal/ckeditor_bootstrap_grid": "1.1",
     "drupal/coffee": "1.0-beta2",
     "drupal/config_update": "1.5",
     "drupal/config_filter": "1.2",
@@ -208,10 +230,6 @@
       "drupal/ace_editor": {
         "Issue #2916832: Add support for calling libraries from the current active profile":
         "https://www.drupal.org/files/issues/2916832-4.patch"
-      },
-      "drupal/ckeditor_widgets": {
-        ";; Issue #2926160: Can't insert images inside Drupal CKEditor Boostrap Widgets editable area":
-        "https://www.drupal.org/files/issues/ckeditor-widgets-images-2926160-3-8.patch"
       },
       "drupal/coffee": {
         "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8":
