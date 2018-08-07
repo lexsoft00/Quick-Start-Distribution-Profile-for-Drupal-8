@@ -88,10 +88,10 @@ function quick_start_install() {
   // Can add code in here to make nodes, terms, etc.
 }
 
-
 /**
- *  Update editor filtered html button settings.
- *  Replaced Ckeditor Widgets with Ckeditor Bootstrap Grid
+ * Update editor filtered html button settings.
+ *
+ * Replaced Ckeditor Widgets with Ckeditor Bootstrap Grid.
  */
 function quick_start_update_8001() {
   if (\Drupal::moduleHandler()->moduleExists('ckeditor_widgets')) {
