@@ -86,23 +86,6 @@
       }
     }                      
   ],
-  "scripts": {
-    "drupal-scaffold": "QuickStart\\DrupalScaffold\\Plugin::scaffold",
-    "post-install-cmd": [
-      "QuickStart\\composer\\ScriptHandler::createRequiredFiles",
-      "QuickStart\\composer\\ScriptHandler::removeGitDirectories",
-      "@composer drupal-scaffold"
-    ],
-    "post-update-cmd": [
-      "QuickStart\\composer\\ScriptHandler::createRequiredFiles",
-      "QuickStart\\composer\\ScriptHandler::removeGitDirectories"
-    ]
-  },
-  "autoload": {
-    "psr-4": {
-      "QuickStart\\": "src"
-    }
-  },
   "require": {
     "composer/installers": "1.5.0",
     "oomphinc/composer-installers-extender": "1.1.2",
