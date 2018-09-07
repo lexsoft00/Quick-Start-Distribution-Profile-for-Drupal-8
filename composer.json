@@ -92,7 +92,7 @@
     "cweagans/composer-patches": "1.6.4",
     "drupal-composer/drupal-scaffold": "2.4.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.6.0-rc1",
+    "drupal/core": "8.6.0",
     "drupal/ace_editor": "1.0",
     "drupal/admin_toolbar": "1.24",
     "drupal/adminimal_admin_toolbar": "1.8",
@@ -126,14 +126,14 @@
     "drupal/entity_clone": "1.0-alpha2",
     "drupal/entity_embed": "1.0-beta2",
     "drupal/entity_reference_revisions": "1.5",
-    "drupal/entityqueue": "1.0-alpha7",
+    "drupal/entityqueue": "1.0-alpha8",
     "drupal/entityqueue_form_widget": "1.0-beta3",
     "drupal/extlink": "1.1",
     "drupal/features": "3.7",
     "drupal/field_group": "3.0-beta1",
     "drupal/focal_point": "1.0-beta6",
     "drupal/google_analytics": "2.3",
-    "drupal/imageapi_optimize": "2.0-alpha3",
+    "drupal/imageapi_optimize": "2.0-alpha4",
     "drupal/inline_entity_form": "1.0-rc1",
     "drupal/inline_responsive_images": "2.1",
     "drupal/libraries_ui": "1.0",
@@ -146,7 +146,7 @@
     "drupal/media_entity_document": "1.1",
     "drupal/media_entity_image": "1.3",
     "drupal/menu_block": "1.5",
-    "drupal/metatag": "1.5",
+    "drupal/metatag": "1.7",
     "drupal/node_edit_protection": "1.x-dev#902339c08222f838030c07aaea23bdc51ababebd",
     "drupal/page_manager": "4.0-beta3",
     "drupal/panelizer": "4.1",
@@ -175,7 +175,7 @@
     "drupal/views_bootstrap": "3.0",
     "drupal/views_infinite_scroll": "1.5",
     "drupal/viewsreference": "1.2",
-    "drupal/webform": "5.0-rc18",
+    "drupal/webform": "5.0-rc19",
     "drupal/yoast_seo": "1.3",
     "drupal/bootstrap": "3.12",
     "drupal/drupalcoders_bootstrap": "1.0-beta04",
@@ -223,16 +223,6 @@
       "drupal/ctools": {
         "Issue #2820783: Fix Block.php notices and warnings.":
         "https://www.drupal.org/files/issues/fixblockpager-2820783-27.patch"
-      },
-      "drupal/entityqueue": {
-        "Issue #2145441: Option to create Entityqueue tab on Entity pages.":
-        "https://www.drupal.org/files/issues/2145441-32.patch",
-        "Issue #2825773: Make Contextual links work for views using Entityqueue":
-        "https://www.drupal.org/files/issues/2825773-23-outside_in_to_settings_tray.patch",
-        "Issue #2916026: Only users with [Administer entityqueue] should be able to delete entityqueues":
-        "https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-to-delete-entityqueues-2916026-3.patch",
-        "Issue #2917308: Only users with [Administer entityqueue] should be able to edit (configure) entityqueues":
-        "https://www.drupal.org/files/issues/only-users-with-administer-entityqueue-should-be-able-edit-configure-entityqueues-2917308-2.patch"
       },
       "drupal/focal_point": {
         "Issue #2916562: Broken image preview":
