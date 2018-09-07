@@ -4,7 +4,7 @@ description: Quick Start for Drupal 8, best used with Aegir Hosting.
 core: 8.x
 distribution:
   name: Quick Start
-# version: 8.x-4.x-dev
+# version: 8.x-6.x-dev
 dependencies:
   # core
   - block
@@ -53,7 +53,7 @@ dependencies:
   - ace_editor
   - admin_toolbar
   - admin_toolbar_tools
-  - adminimal_admin_toolbar   
+  - adminimal_admin_toolbar
   - advanced_text_formatter
   - autocomplete_deluxe
   - better_exposed_filters
@@ -62,7 +62,9 @@ dependencies:
   - blazy
   - coffee
   - config_update
-  - content_lock  
+  - content_lock
+  - config_filter
+  - config_ignore
   - ckeditor_accordion
   - ckeditor_bootstrap_grid
   - crop
@@ -71,53 +73,54 @@ dependencies:
   - ctools_views
   - devel
   - kint
-  - diff  
+  - diff
   - dropzonejs
   - dropzonejs_eb_widget
   - ds
+  - ds_extras
   - embed
   - entity
-  - entity_clone  
+  - entity_clone
   - entity_browser
-  - entity_browser_enhanced  
+  - entity_browser_enhanced
   - entity_reference_revisions
   - entityqueue
-  - entityqueue_form_widget  
+  - entityqueue_form_widget
   - entity_embed
-  - extlink  
+  - extlink
   - features
   - field_group
   - focal_point
   - google_analytics
   - imageapi_optimize
-  - inline_entity_form  
+  - inline_entity_form
   - inline_responsive_images
   - libraries_ui
   - link_attributes
   - linkit
   - mailsystem
   - masquerade
-  - maxlength    
+  - maxlength
   - media_entity
   - media_entity_document
   - media_entity_image
   - menu_block
-  - node_edit_protection  
+  - node_edit_protection
   - page_manager
   - page_manager_ui
-  - panels 
-  - panels_ipe   
-  - panelizer  
+  - panels
+  - panels_ipe
+  - panelizer
   - pathologic
   - rabbit_hole
-  - recaptcha  
+  - recaptcha
   - responsive_image
   - simple_sitemap
   - smart_trim
   - smtp
-  - ultimate_cron  
+  - ultimate_cron
   - video_embed_field
-  - video_embed_wysiwyg  
+  - video_embed_wysiwyg
   - video_embed_media
   - views_bootstrap
   - views_infinite_scroll
