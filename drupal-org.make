@@ -133,8 +133,6 @@ projects[panels][type] = module
 projects[panels][version] = 4.3
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.5
-;; Issue #2461695: Support translatable paragraph entity reference revision field
-projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support-2461695-222.patch
 ;; Issue #2877927: Show add widget between paragraphs on hover
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2877927_29.patch
 projects[paragraphs_previewer][type] = module
