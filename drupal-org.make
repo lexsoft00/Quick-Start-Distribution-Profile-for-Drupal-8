@@ -188,9 +188,7 @@ projects[viewsreference][version] = 1.2
 projects[webform][type] = module
 projects[webform][version] = 5.0-rc21
 projects[yoast_seo][type] = module
-projects[yoast_seo][version] = 1.3
-;; Issue #2877613: Add [ Text (plain, long) ] filed type [string_log] for yoast seo to use.
-projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2877613-2_0.patch
+projects[yoast_seo][version] = 1.4
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.13
 projects[drupalcoders_bootstrap][type] = theme
