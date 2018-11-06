@@ -5,6 +5,7 @@
  * Enables modules and site configuration for a standard site installation.
  */
 
+use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
@@ -114,9 +115,9 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
       $source = 'profiles/quick_start/libraries/';
       $res = 'libraries/';
       // Do not copy if the folder already exists.
-      if (FALSE == folder_exist($res)) {
+      if (FALSE == quick_start_folder_exist($res)) {
         quick_start_recurse_copy($source, $res);
-        drupal_get_messages();
+        MessengerInterface::all();
       }
     };
   }
@@ -132,7 +133,7 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
  *   returns the canonicalized absolute pathname on success otherwise
  *   FALSE is returned
  */
-function folder_exist($folder) {
+function quick_start_folder_exist($folder) {
   // Get canonicalized absolute pathname.
   $path = realpath($folder);
 

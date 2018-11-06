@@ -4,20 +4,20 @@ type: module
 package: Quick
 core: 8.x
 dependencies:
-  - advanced_text_formatter
-  - ds
-  - entity_reference_revisions
-  - field
-  - field_group
-  - maxlength
-  - menu_ui
-  - metatag
-  - node
-  - paragraphs
-  - paragraphs_previewer
-  - path
-  - pathauto
-  - rabbit_hole
-  - user
-  - viewsreference
-  - yoast_seo
+  - advanced_text_formatter:advanced_text_formatter
+  - ds:ds
+  - entity_reference_revisions:entity_reference_revisions
+  - drupal:field
+  - field_group:field_group
+  - maxlength:maxlength
+  - drupal:menu_ui
+  - metatag:metatag
+  - drupal:node
+  - paragraphs:paragraphs
+  - paragraphs_previewer:paragraphs_previewer
+  - drupal:path
+  - pathauto:pathauto
+  - rabbit_hole:rabbit_hole
+  - drupal:user
+  - viewsreference:viewsreference
+  - yoast_seo:yoast_seo

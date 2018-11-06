@@ -3,30 +3,30 @@ description: 'This app will populate the universal implementation of a "Hero Sli
 type: module
 core: '8.x'
 dependencies:
-  - block
-  - block_class
-  - block_content
-  - dropzonejs_eb_widget
-  - ds
-  - entity_browser
-  - entity_browser_entity_form
-  - entityqueue
-  - field
-  - field_group
-  - image
-  - link
-  - media_entity
-  - menu_ui
-  - node
-  - page_manager
-  - panelizer
-  - panels
-  - path
-  - rabbit_hole
-  - slick
-  - slick_views
-  - system
-  - user
-  - video_embed_field
-  - views
+  - drupal:block
+  - block_class:block_class
+  - drupal:block_content
+  - dropzonejs_eb_widget:dropzonejs_eb_widget
+  - ds:ds
+  - entity_browser:entity_browser
+  - entity_browser_entity_form:entity_browser_entity_form
+  - entityqueue:entityqueue
+  - drupal:field
+  - field_group:field_group
+  - drupal:image
+  - drupal:link
+  - media_entity:media_entity
+  - drupal:menu_ui
+  - drupal:node
+  - page_manager:page_manager
+  - panelizer:panelizer
+  - panels:panels
+  - drupal:path
+  - rabbit_hole:rabbit_hole
+  - slick:slick
+  - slick_views:slick_views
+  - drupal:system
+  - drupal:user
+  - video_embed_field:video_embed_field
+  - drupal:views
 package: Quick

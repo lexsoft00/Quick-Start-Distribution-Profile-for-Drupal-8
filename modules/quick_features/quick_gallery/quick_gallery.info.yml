@@ -4,16 +4,16 @@ type: module
 package: Quick
 core: 8.x
 dependencies:
-  - block
-  - block_class
-  - colorbox
-  - field
-  - file
-  - image
-  - menu_ui
-  - node
-  - path
-  - rabbit_hole
-  - system
-  - user
-  - views
+  - drupal:block
+  - block_class:block_class
+  - colorbox:colorbox
+  - drupal:field
+  - drupal:file
+  - drupal:image
+  - drupal:menu_ui
+  - drupal:node
+  - drupal:path
+  - rabbit_hole:rabbit_hole
+  - drupal:system
+  - drupal:user
+  - drupal:views
