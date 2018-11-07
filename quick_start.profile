@@ -5,7 +5,6 @@
  * Enables modules and site configuration for a standard site installation.
  */
 
-use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
@@ -117,7 +116,6 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
       // Do not copy if the folder already exists.
       if (FALSE == quick_start_folder_exist($res)) {
         quick_start_recurse_copy($source, $res);
-        MessengerInterface::all();
       }
     };
   }
