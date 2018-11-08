@@ -186,6 +186,46 @@
     "ajaxorg/ace-builds": "v1.2.6",
     "jackmoore/colorbox": "1.6.4"
   },
+  "require-dev": {
+    "drush/drush": "^8.1.16",
+    "drupal/coder": "^8.2.12",
+    "drupal/drupal-extension": "^3.4.1",
+    "phing/phing": "^2.16.1",
+    "behat/behat": "^3.4.3",
+    "behat/mink": "^1.7.1",
+    "behat/mink-extension": "^2.3.1",
+    "behat/mink-goutte-driver": "^1.2.1",
+    "behat/mink-selenium2-driver": "^1.3.1",
+    "behatch/contexts": "^3.1.0",
+    "emuse/behat-html-formatter": "^0.1.0"
+  },
+  "config": {
+    "bin-dir": "bin/",
+    "secure-http": false,
+    "preferred-install": {
+      "drupal/core": "dist"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "QuickStart\\composer\\": "src/composer"
+    }
+  },
+  "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "pre-install-cmd": ["QuickStart\\composer\\ScriptHandler::checkComposerVersion"],
+    "pre-update-cmd": ["QuickStart\\composer\\ScriptHandler::checkComposerVersion"],
+    "post-install-cmd": [
+      "QuickStart\\composer\\ScriptHandler::createRequiredFiles",
+      "QuickStart\\composer\\ScriptHandler::removeGitDirectories",
+      "@composer drupal-scaffold"
+    ],
+    "post-update-cmd": [
+      "QuickStart\\composer\\ScriptHandler::createRequiredFiles",
+      "QuickStart\\composer\\ScriptHandler::removeGitDirectories"
+    ],
+    "post-drupal-scaffold-cmd": ["QuickStart\\composer\\ScriptHandler::postDrupalScaffoldProcedure"]
+  },
   "extra": {
     "branch-alias": {
       "dev-8.x-1.x": "8.5.x-dev"

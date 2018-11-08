@@ -1,0 +1,141 @@
+sudo: required
+dist: trusty
+group: deprecated-2017Q4
+language: php
+cache:
+  bundler: true
+  apt: true
+  directories:
+    - "$HOME/.composer/cache"
+    - "$HOME/.drush/cache"
+    - "$HOME/.npm"
+    - "$HOME/.selenium/cache"
+
+php:
+  - 7.2
+
+env:
+- JOB=01-website-base-requirements
+- JOB=02-user-management
+- JOB=03-admin-management
+- JOB=04-content-structure
+- JOB=05-content-management
+
+matrix:
+  exclude:
+  # Automated Functional Acceptance Testing group: 01 website base requirements
+  - php: 7.2
+    env: JOB=01-website-base-requirements
+
+  # Automated Functional Acceptance Testing group: 02 user management
+  - php: 7.2
+    env: JOB=02-user-management
+
+  # Automated Functional Acceptance Testing group: 03 admin management
+  - php: 7.2
+    env: JOB=03-admin-management
+
+  # Automated Functional Acceptance Testing group: 04 content structure
+  - php: 7.2
+    env: JOB=04-content-structure
+
+  # Automated Functional Acceptance Testing group: 05 content-management
+  - php: 7.2
+    env: JOB=05-content-management
+
+addons:
+  apt:
+    update: true
+    packages:
+    - libappindicator1
+    - fonts-liberation
+
+mysql:
+  database: test_quick_start
+  username: root
+  encoding: utf8
+
+before_install:
+  - phpenv config-rm xdebug.ini
+  - phpenv rehash
+  - composer self-update
+  - composer --version
+
+  # Composer Configurations.
+  - export PATH="$HOME/.composer/vendor/bin:$TRAVIS_BUILD_DIR/bin:$PATH"
+  - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
+
+  # MySQL Configurations.
+  - mysql -e 'SET GLOBAL wait_timeout = 5400;'
+  - mysql -e "SHOW VARIABLES LIKE 'wait_timeout'"
+
+  # PHP Configurations.
+  - echo 'max_execution_time = 1200' >> quick_start.php.ini;
+  - echo 'max_input_time = 180' >> quick_start.php.ini;
+  - echo 'max_input_vars = 10000' >> quick_start.php.ini;
+  - echo 'memory_limit = 2000M' >> quick_start.php.ini;
+  - echo 'error_reporting = E_ALL' >> quick_start.php.ini;
+  - echo 'post_max_size = 64M' >> quick_start.php.ini;
+  - echo 'upload_max_filesize = 32M' >> quick_start.php.ini;
+  - echo 'max_file_uploads = 40' >> quick_start.php.ini;
+  - echo 'sendmail_path = /bin/true' >> quick_start.php.ini;
+  - phpenv config-add quick_start.php.ini
+  - phpenv rehash
+
+  # Configure and run the virtual display.
+  - export DISPLAY=:99
+  - sh -e /etc/init.d/xvfb start
+  - Xvfb :99 -ac -screen 0 1366x768x24 &>/dev/null &
+  - sleep 3
+
+  # Download Chrome Driver.
+  - LATEST_CHROMEDRIVER=$(wget -q -O - http://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+  - wget http://chromedriver.storage.googleapis.com/$LATEST_CHROMEDRIVER/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip
+  - chmod +x chromedriver
+  - mkdir -p $HOME/.composer/vendor/bin
+  - mv -f chromedriver $HOME/.composer/vendor/bin/
+  - rm chromedriver_linux64.zip
+
+  # Update Chrome.
+  - export CHROME_BIN=/usr/bin/google-chrome
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome-stable_current_amd64.deb
+  - rm google-chrome-stable_current_amd64.deb
+  - google-chrome --version
+
+  # Run selenium standalone server.
+  - SELENIUM="$HOME/.selenium/cache/selenium-server-standalone-2.53.1.jar";
+  - if [[ ! -f $SELENIUM ]]; then wget -O $SELENIUM http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar; fi
+  - java -jar $SELENIUM -port 4445 > /dev/null 2>&1 &
+  - echo "[  OK  ] Starting Selenium on the 4445 port ..."
+install:
+  - git checkout $TRAVIS_COMMIT
+  ## Build with the composer.
+  - composer install --no-interaction
+  - ls -l bin/
+  - chmod -R 775 bin/
+  - cd docroot/profiles
+  - git clone https://github.com/lexsoft00/quick_start.git quick_start
+
+## Install with drush.
+  - cd ../
+  - drush site-install quick_start --yes --site-name='Test Quick Start' --account-name=webmaster --account-pass=LetMe.in1234 --account-mail=webmaster@drupalcoders.org --db-url="mysql://root:@localhost/test_quick_start"
+  - drush config-set system.performance css.preprocess 0 --yes
+  - drush config-set system.performance js.preprocess 0 --yes
+  - drush config-set system.logging error_level all --yes
+  - drush pm-enable quick_v_heroslider_media --yes
+  - drush cr
+
+before_script:
+- drush runserver --default-server=builtin 8080 &>/dev/null &
+- sleep 5
+
+script:
+- cd ./profiles/quick_start
+- behat --strict tests/features/quick_start/step1-init-tests/
+- behat --strict tests/features/quick_start/step2-apply-tests/$JOB
+
+matrix:
+  fast_finish: true
+
