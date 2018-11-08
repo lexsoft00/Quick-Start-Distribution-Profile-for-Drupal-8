@@ -156,10 +156,6 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I press "field_lp_paragraphs_0_subform_bp_tab_section_0_subform_bp_tab_section_body_bp_simple_add_more"
       And I wait
      Then I should see "Tab body"
-      And I press "Add Component"
-      And I wait for AJAX to finish
-      And I press "Rich Text"
-      And I wait for AJAX to finish
       And I fill in the rich text editor field "Text" with "Tab 1 - Body test"
      When I press "Save"
       And I wait
