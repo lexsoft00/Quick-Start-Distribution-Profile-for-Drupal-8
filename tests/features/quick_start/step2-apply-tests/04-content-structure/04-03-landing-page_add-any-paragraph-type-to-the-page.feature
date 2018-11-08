@@ -6,12 +6,6 @@ So that the "Landing page" will show up having paragrpahs of different types
  @local @development @staging @production
   Scenario: Upload the "Embed Flag Earth" file.
      Given I am a logged in user with the "test_site_admin" user
-      When I go to "admin/content/media-table"
-       And I wait
-      Then I should see "Add media"
-      When I click "Add media"
-       And I wait
-      Then I should see "Image"
       When I go to "/media/add/image"
        And I wait
       Then I should see "Allowed types: png gif jpg jpeg."
@@ -19,22 +13,19 @@ So that the "Landing page" will show up having paragrpahs of different types
        And I wait
        And I press the "Save" button
        And I wait
-       And I fill in "Embed Flag Earth in space" for "field_media_image[0][alt]"
-       And I fill in "Embed Flag Earth all earth in space" for "field_media_image[0][title]"
        And I fill in "Embed Flag Earth" for "name[0][value]"
-       And I check the box "Save to Library"
        And I press the "Save" button
-       And I wait
-      Then I should see "Embed Flag Earth"
+       And I go to "/admin/content/files"
+      Then I should see "flag-earth.jpg"
   #-----------------------------------------------------------------------------
 
   @javascript @local @development @staging @production
-  Scenario: Check Varbase Bootstrap Paragraphs settings, and colours.
+  Scenario: Check quick_start Bootstrap Paragraphs settings, and colours.
     Given I am a logged in user with the "webmaster" user
-     When I go to "/admin/config/varbase/varbase-bootstrap-paragraphs"
+     When I go to "/admin/structure/quick-v-bootstrap-paragraphs"
       And I wait
-     Then I should see "Varbase Bootstrap Paragraphs settings"
-      And I should see "Available CSS styles (classes) for Varbase Bootstrap Paragraphs"
+     Then I should see "Quick V Bootstrap Paragraphs settings"
+      And I should see "Available CSS styles (classes) for Quick V Bootstrap Paragraphs"
       And I press "Save configuration"
      Then I should see "The configuration options have been saved."
 
@@ -47,7 +38,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description Drupal Block" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Drupal Block"
@@ -68,7 +59,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description Columns (Equal)" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Columns (Equal)"
@@ -86,7 +77,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description Columns (Two Uneven)" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Columns (Two Uneven)"
@@ -104,7 +95,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description Modal" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Modal"
@@ -117,7 +108,6 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I press "field_lp_paragraphs_0_subform_bp_modal_body_bp_simple_add_more"
       And I wait
      Then I should see "Modal body"
-      And I fill in the rich text editor field "Text" with "Modal Body test"
      When I press "Save"
      Then I should see "Landing page Test Landing page Modal has been created"
      When I press "Modal button"
@@ -133,7 +123,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description Rich Text" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Rich Text"
@@ -154,7 +144,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description Tabs" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Tabs"
@@ -166,6 +156,10 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I press "field_lp_paragraphs_0_subform_bp_tab_section_0_subform_bp_tab_section_body_bp_simple_add_more"
       And I wait
      Then I should see "Tab body"
+      And I press "Add Component"
+      And I wait for AJAX to finish
+      And I press "Rich Text"
+      And I wait for AJAX to finish
       And I fill in the rich text editor field "Text" with "Tab 1 - Body test"
      When I press "Save"
       And I wait
@@ -181,7 +175,7 @@ So that the "Landing page" will show up having paragrpahs of different types
       And I fill in "Test Landing page description WebForm" for "Page description"
       And I wait for AJAX to finish
       And I wait
-      And I press "+ Add"
+      And I press "Add Component"
       And I wait for AJAX to finish
       And I wait
       And I press "Webform"

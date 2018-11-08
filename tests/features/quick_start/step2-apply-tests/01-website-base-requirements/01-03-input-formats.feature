@@ -14,14 +14,6 @@ So that can use different type of rich text editors.
 
      When I select "full_html" from "body[0][format]"
       And I wait for AJAX to finish
-     Then I should see the "#cke_edit-body-0-value" element in the "field body"
-
-     When I select "basic_html" from "body[0][format]"
-      And I wait for AJAX to finish
-     Then I should see the "#cke_edit-body-0-value" element in the "field body"
-
-     When I select "code_html" from "body[0][format]"
-      And I wait for AJAX to finish
      Then I should see the "#edit-body-0-value" element in the "field body"
       And I should not see the "#cke_edit-body-0-value" element in the "field body"
 
@@ -35,13 +27,8 @@ So that can use different type of rich text editors.
 
      When I select "full_html" from "body[0][format]"
       And I wait for AJAX to finish
-     Then I should see the "#cke_edit-body-0-value" element in the "field body"
-
-     When I select "basic_html" from "body[0][format]"
-      And I wait for AJAX to finish
-     Then I should see the "#cke_edit-body-0-value" element in the "field body"
-
-     When I select "code_html" from "body[0][format]"
-      And I wait for AJAX to finish
      Then I should see the "#edit-body-0-value" element in the "field body"
-      And I should not see the "#cke_edit-body-0-value" element in the "field body"
+
+     When I select "filtered_html" from "body[0][format]"
+      And I wait for AJAX to finish
+     Then I should see the "#cke_edit-body-0-value" element in the "field body"
