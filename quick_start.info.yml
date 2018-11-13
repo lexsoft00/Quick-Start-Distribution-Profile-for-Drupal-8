@@ -122,9 +122,6 @@ dependencies:
   - viewsreference
   - paragraphs
   - paragraphs_previewer
-  - contribute
-  - webform
-  - webform_bootstrap
 
 themes:
   # Contrib themes.
