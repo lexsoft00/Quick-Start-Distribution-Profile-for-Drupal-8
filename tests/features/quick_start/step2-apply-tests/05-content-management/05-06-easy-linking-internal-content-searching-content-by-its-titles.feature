@@ -10,7 +10,7 @@ So that will ease the work of adding internal links in the rich text editor fiel
      When I go to "/node/add/page"
       And I wait
      Then I should see "Create Basic page"
-     When I select "filtered_html" from "Text format"
+     When I select "full_html" from "Text format"
       And I fill in "Linking to internal content #1 title" for "Title"
       And I fill in the rich text editor field "Body" with "Linking to internal content #1 body"
       And I press "Save"
@@ -24,7 +24,7 @@ So that will ease the work of adding internal links in the rich text editor fiel
      When I go to "/node/add/page"
       And I wait
      Then I should see "Create Basic page"
-     When I select "filtered_html" from "Text format"
+     When I select "full_html" from "Text format"
       And I fill in "Linking to internal content #2 title" for "Title"
       And I fill in the rich text editor field "Body" with " Linking to internal content #2 body "
       And I click on "linkit" command button in the rich text editor field "Body"

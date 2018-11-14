@@ -5,7 +5,6 @@
  * Install, update and uninstall functions for the profilename install profile.
  */
 
-use Symfony\Component\Yaml\Yaml;
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\shortcut\Entity\Shortcut;
@@ -79,30 +78,11 @@ function quick_start_install() {
   // Default user theme.
   \Drupal::configFactory()->getEditable('system.theme')->set('default', 'drupalcoders_bootstrap')->save(TRUE);
   // Enable the admin theme.
-  \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme_extras')->save(TRUE);
+  \Drupal::configFactory()->getEditable('system.theme')->set('admin', 'adminimal_theme')->save(TRUE);
   // Enable the admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
   // Entity updates to clear up any mismatched entity and/or field definitions
   // And Fix changes were detected in the entity type and field definitions.
   \Drupal::entityDefinitionUpdateManager()->applyUpdates();
   // Can add code in here to make nodes, terms, etc.
-}
-
-/**
- * Update editor filtered html button settings.
- *
- * Replaced Ckeditor Widgets with Ckeditor Bootstrap Grid.
- */
-function quick_start_update_8001() {
-  if (\Drupal::moduleHandler()->moduleExists('ckeditor_widgets')) {
-    \Drupal::service('module_installer')->uninstall(['ckeditor_widgets'], FALSE);
-    if (!\Drupal::moduleHandler()->moduleExists('ckeditor_bootstrap_grid')) {
-      \Drupal::service('module_installer')->install(['ckeditor_bootstrap_grid'], FALSE);
-      $editor_editor_filtered_html_config = \Drupal::service('config.factory')->getEditable('editor.editor.filtered_html');
-      $editor_editor_filtered_html_config_file = \Drupal::root() . '/' . drupal_get_path('profile', 'quick_start') . '/config/install/editor.editor.filtered_html.yml';
-      $editor_editor_filtered_html_config_content = file_get_contents($editor_editor_filtered_html_config_file);
-      $editor_editor_filtered_html_config_content_data = (array) Yaml::parse($editor_editor_filtered_html_config_content);
-      $editor_editor_filtered_html_config->setData($editor_editor_filtered_html_config_content_data)->save();
-    }
-  }
 }

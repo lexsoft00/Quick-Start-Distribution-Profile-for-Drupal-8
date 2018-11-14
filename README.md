@@ -11,7 +11,6 @@ INTRODUCTION
 ------------
 
 Deliver a quick installation for Drupal 8.
-[![Build Status](https://travis-ci.org/lexsoft00/quick_start.svg?branch=8.x-1.x)](https://travis-ci.org/lexsoft00/quick_start)
 
 INFORMATION
 -----------

@@ -116,7 +116,7 @@ install:
   - ls -l bin/
   - chmod -R 775 bin/
   - cd docroot/profiles
-  - git clone https://github.com/lexsoft00/quick_start.git quick_start
+  - git clone https://github.com/lexsoft00/quick_start_dev.git quick_start
 
 ## Install with drush.
   - cd ../
@@ -124,7 +124,7 @@ install:
   - drush config-set system.performance css.preprocess 0 --yes
   - drush config-set system.performance js.preprocess 0 --yes
   - drush config-set system.logging error_level all --yes
-  - drush pm-enable quick_v_heroslider_media --yes
+  - drush pm-enable varbase_heroslider_media --yes
   - drush cr
 
 before_script:

@@ -34,20 +34,17 @@ function quick_start_install_profile_modules(array &$install_state) {
   $files = system_rebuild_module_data();
 
   $modules = [
-    'quick_v_media' => 'quick_v_media',
-    'token' => 'token',
-    'pathauto' => 'pathauto',
-    'metatag' => 'metatag',
-    'metatag_facebook' => 'metatag_facebook',
-    'metatag_google_plus' => 'metatag_google_plus',
-    'metatag_hreflang' => 'metatag_hreflang',
-    'metatag_mobile' => 'metatag_mobile',
-    'metatag_open_graph' => 'metatag_open_graph',
-    'metatag_verification' => 'metatag_verification',
-    'yoast_seo' => 'yoast_seo',
-    'quick_v_bootstrap_paragraphs' => 'quick_v_bootstrap_paragraphs',
-    'quick_v_landing' => 'quick_v_landing',
-    'quick_page' => 'quick_page',
+    'varbase_core' => 'varbase_core',
+    'varbase_admin' => 'varbase_admin',
+    'varbase_media' => 'varbase_media',
+    'varbase_security' => 'varbase_security',
+    'varbase_webform' => 'varbase_webform',
+    'quick_editor' => 'quick_editor',
+    'varbase_bootstrap_paragraphs' => 'varbase_bootstrap_paragraphs',
+    'varbase_page' => 'varbase_page',
+    'varbase_landing' => 'varbase_landing',
+    'varbase_search' => 'varbase_search',
+    'varbase_seo' => 'varbase_seo',
   ];
   $quick_start_modules = $modules;
   // Always install required modules first. Respect the dependencies between
@@ -114,7 +111,7 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
       $source = 'profiles/quick_start/libraries/';
       $res = 'libraries/';
       // Do not copy if the folder already exists.
-      if (FALSE == quick_start_folder_exist($res)) {
+      if (FALSE == folder_exist($res)) {
         quick_start_recurse_copy($source, $res);
       }
     };
@@ -131,7 +128,7 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
  *   returns the canonicalized absolute pathname on success otherwise
  *   FALSE is returned
  */
-function quick_start_folder_exist($folder) {
+function folder_exist($folder) {
   // Get canonicalized absolute pathname.
   $path = realpath($folder);
 

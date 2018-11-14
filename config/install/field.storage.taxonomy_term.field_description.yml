@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - text
     - taxonomy
 id: taxonomy_term.field_description
 field_name: field_description
@@ -13,6 +12,9 @@ default_value: {  }
 default_value_callback: ''
 settings: {  }
 type: string_long
+settings:
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

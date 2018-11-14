@@ -16,175 +16,52 @@
     "issues": "http://drupal.org/project/issues/quick_start",
     "source": "http://cgit.drupalcode.org/quick_start"
   },
-  "repositories": [
-    {
+  "repositories": {
+    "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
-    },
-    {
+      },
+    "assets": {
       "type": "composer",
       "url": "https://asset-packagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-      "name": "enyo/dropzone",
-      "version": "v4.3.0",
-      "type": "drupal-library",
-      "dist": {
-        "url": "https://github.com/enyo/dropzone/archive/v4.3.0.zip",
-        "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-      "name": "dinbror/blazy",
-      "version": "1.8.2",
-      "type": "drupal-library",
-      "dist": {
-        "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip",
-        "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-      "name": "kenwheeler/slick",
-      "version": "1.6.0",
-      "type": "drupal-library",
-      "dist": {
-        "url": "https://github.com/kenwheeler/slick/archive/1.6.0.zip",
-        "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-      "name": "ajaxorg/ace-builds",
-      "version": "v1.2.6",
-      "type": "drupal-library",
-      "dist": {
-        "url": "https://github.com/ajaxorg/ace-builds/archive/v1.2.6.zip",
-        "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-      "name": "jackmoore/colorbox",
-      "version": "1.6.4",
-      "type": "drupal-library",
-      "dist": {
-        "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
-        "type": "zip"
-        }
-      }
     }
-  ],
+  },
   "require": {
-    "composer/installers": "1.5.0",
-    "oomphinc/composer-installers-extender": "1.1.2",
-    "cweagans/composer-patches": "1.6.4",
-    "drupal-composer/drupal-scaffold": "2.4.0",
-    "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.6.3",
-    "drupal/ace_editor": "1.0",
-    "drupal/admin_toolbar": "1.24",
-    "drupal/adminimal_admin_toolbar": "1.8",
-    "drupal/advanced_text_formatter": "1.0-beta3",
-    "drupal/autocomplete_deluxe": "1.0-beta1",
-    "drupal/better_exposed_filters": "3.0-alpha5",
-    "drupal/blazy": "1.0-rc3",
-    "drupal/block_class": "1.0",
-    "drupal/bootstrap_layouts": "5.1",
-    "drupal/captcha": "1.0-beta1",
-    "drupal/colorbox": "1.4",
-    "drupal/colorbox_inline": "1.1",
+    "composer/installers": "^1.5.0",
+    "oomphinc/composer-installers-extender": "^1.1.2",
+    "cweagans/composer-patches": "^1.6.4",
+    "drupal-composer/drupal-scaffold": "^2.4.0",
+    "drupal/drupal-library-installer-plugin": "^0.3",
+    "drupal/varbase_core": "^6.2",
+    "drupal/varbase_media": "^6.0",
+    "drupal/varbase_bootstrap_paragraphs": "^6.1",
+    "drupal/varbase_landing": "^6.0",
+    "drupal/varbase_search": "^6.0",
+    "drupal/varbase_seo": "^6.1",
+    "drupal/varbase_heroslider_media": "^6.0",
     "drupal/ckeditor_accordion": "1.1",
     "drupal/ckeditor_bootstrap_grid": "1.2",
-    "drupal/coffee": "1.0-beta2",
-    "drupal/config_update": "1.5",
-    "drupal/config_filter": "1.3",
-    "drupal/config_ignore": "2.1",
-    "drupal/contact_formatter": "1.0",
-    "drupal/content_lock": "1.0-alpha8",
-    "drupal/contribute": "1.0-beta7",
-    "drupal/crop": "1.5",
-    "drupal/ctools": "3.0",
-    "drupal/devel": "1.2",
-    "drupal/diff": "1.0-rc2",
-    "drupal/dropzonejs": "1.0-alpha8",
-    "drupal/ds": "3.1",
-    "drupal/embed": "1.0",
-    "drupal/entity": "1.0-rc1",
-    "drupal/entity_browser": "1.6",
-    "drupal/entity_browser_enhanced": "1.0-rc3",
-    "drupal/entity_clone": "1.0-alpha2",
-    "drupal/entity_embed": "1.0-beta2",
-    "drupal/entity_reference_revisions": "1.6",
-    "drupal/entityqueue": "1.0-alpha8",
-    "drupal/entityqueue_form_widget": "1.0-beta3",
-    "drupal/extlink": "1.1",
-    "drupal/features": "3.8",
-    "drupal/field_group": "3.0-beta1",
-    "drupal/focal_point": "1.0-beta6",
-    "drupal/google_analytics": "2.3",
-    "drupal/imageapi_optimize": "2.0-alpha4",
-    "drupal/inline_entity_form": "1.0-rc1",
-    "drupal/inline_responsive_images": "2.1",
-    "drupal/libraries_ui": "1.0",
-    "drupal/link_attributes": "1.5",
-    "drupal/linkit": "4.3",
-    "drupal/mailsystem": "4.1",
-    "drupal/masquerade": "2.0-beta2",
-    "drupal/maxlength": "1.0-beta2",
-    "drupal/media_entity": "1.8",
-    "drupal/media_entity_document": "1.1",
-    "drupal/media_entity_image": "1.3",
-    "drupal/menu_block": "1.5",
-    "drupal/metatag": "1.7",
+    "drupal/pathologic": "^1.0-alpha1",
+    "drupal/ace_editor": "1.0",
+    "drupal/linkit": "^4.3",
+    "drupal/image_resize_filter": "1.x-dev#c3f4b23b02005859092aaff746b9f21b794adc58",
+    "drupal/ckeditor_media_embed": "1.3",
+    "drupal/anchor_link": "^1.6",
+    "drupal/extlink": "1.x-dev#8a773a6c5519ccb167e18cc39d68551b30b0e4b3",
+    "drupal/entity_clone": "1.x-dev#6d0ce053605e9aaf8412927a9b0ea8da7a9a06e5",
+    "drupal/tour_ui": "1.x-dev#5cf793c071aeddea0ecd20d80b541606bfe2aff1",
+    "drupal/tour_builder": "1.x-dev#d70e898949b7ec4095efb391a0dbec56d0117558",
+    "drupal/l10n_client": "1.x-dev#9bf8d597732870bdca301512c71b6e5d74d48db2",
     "drupal/node_edit_protection": "1.x-dev#902339c08222f838030c07aaea23bdc51ababebd",
-    "drupal/page_manager": "4.0-beta3",
-    "drupal/panelizer": "4.1",
-    "drupal/panels": "4.3",
-    "drupal/paragraphs": "1.5",
-    "drupal/paragraphs_previewer": "1.2",
-    "drupal/pathauto": "1.3",
-    "drupal/pathologic": "1.0-alpha1",
-    "drupal/quick_v_media": "1.0-alpha1",
-    "drupal/quick_v_bootstrap_paragraphs": "1.0-alpha4",
-    "drupal/rabbit_hole": "1.0-beta4",
-    "drupal/recaptcha": "2.3",
-    "drupal/redirect": "1.3",
-    "drupal/schema_metatag": "1.0",
-    "drupal/search_api": "1.10",
-    "drupal/simple_sitemap": "2.12",
-    "drupal/slick": "1.0",
-    "drupal/slick_views": "1.0-rc2",
-    "drupal/slick_media": "1.0",
-    "drupal/smart_trim": "1.1",
-    "drupal/smtp": "1.0-beta4",
-    "drupal/token": "1.5",
-    "drupal/ultimate_cron": "2.0-alpha4",
-    "drupal/userprotect": "1.0",
-    "drupal/video_embed_field": "1.5",
-    "drupal/views_bootstrap": "3.1",
-    "drupal/views_infinite_scroll": "1.5",
-    "drupal/viewsreference": "1.2",
-    "drupal/webform": "5.0-rc26",
-    "drupal/yoast_seo": "1.4",
-    "drupal/bootstrap": "3.14",
+    "drupal/security_review": "1.x-dev#35ebae445bb260e961e47c4c58efe7c50c228999",
+    "drupal/menu_position": "1.x-dev#d134276b4bbd08b3c9678943d0225fbef7dd05b5",
+    "drupal/mail_edit": "1.x-dev#bcd0041830d8581b36e6211f0c8eabd8caf9652b",
+    "drupal/taxonomy_menu": "3.x-dev#1103ad0855de4d242364a5b7e74a5c5fc1ce9e02",
+    "drupal/betterlogin": "1.x-dev#f7cf1c5c9ec5e80c6ac0ef04ed605e25495232cd",
+    "drupal/adminimal_theme": "1.3",
+    "drupal/bootstrap": "3.13",
     "drupal/drupalcoders_bootstrap": "1.0-rc2",
-    "enyo/dropzone": "v4.3.0",
-    "dinbror/blazy": "1.8.2",
-    "kenwheeler/slick": "1.6.0",
-    "ajaxorg/ace-builds": "v1.2.6",
-    "jackmoore/colorbox": "1.6.4"
+    "npm-asset/ace-builds": "1.3.3"
   },
   "require-dev": {
     "drush/drush": "^8.1.16",
@@ -230,22 +107,33 @@
     "branch-alias": {
       "dev-8.x-1.x": "8.5.x-dev"
     },
+    "installer-types": [
+      "bower-asset",
+      "npm-asset"
+    ],
     "installer-paths": {
       "docroot/core": ["drupal/core"],
       "docroot/profiles/{$name}": ["type:drupal-profile"],
       "docroot/modules/contrib/{$name}": ["type:drupal-module"],
       "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
-      "docroot/libraries/{$name}": ["type:drupal-library"],
+      "docroot/libraries/slick": ["npm-asset/slick-carousel"],
+      "docroot/libraries/ace": ["npm-asset/ace-builds"],
+      "docroot/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
+      ],
+      "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
       "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "drupal-libraries": {
       "library-directory": "docroot/libraries",
       "libraries": [
-          {"name": "dropzone","package": "enyo/dropzone"},
-          {"name": "blazy", "package": "dinbror/blazy"},
-          {"name": "slick", "package": "kenwheeler/slick"},
-          {"name": "ace", "package": "ajaxorg/ace"},
-          {"name": "colorbox", "package": "jackmoore/colorbox"}
+          {"name": "dropzone","package": "npm-asset/dropzone"},
+          {"name": "blazy", "package": "npm-asset/blazy"},
+          {"name": "slick", "package": "npm-asset/slick-carousel"},
+          {"name": "ace", "package": "npm-asset/ace-builds"}
       ]
     },
     "enable-patching": true,
@@ -255,23 +143,9 @@
         "Issue #2916832: Add support for calling libraries from the current active profile":
         "https://www.drupal.org/files/issues/2916832-4.patch"
       },
-      "drupal/coffee": {
-        "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8":
-        "https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch",
-        "Issue #2872093: Coffee css fixes in RTL":
-        "https://www.drupal.org/files/issues/2872093-10.patch"
-      },
-      "drupal/ctools": {
-        "Issue #2820783: Fix Block.php notices and warnings.":
-        "https://www.drupal.org/files/issues/fixblockpager-2820783-27.patch"
-      },
-      "drupal/focal_point": {
-        "Issue #2916562: Broken image preview":
-        "https://www.drupal.org/files/issues/2916562-16.patch"
-      },
-      "drupal/paragraphs_previewer": {
-        "Issue #2904917: Make paragraph previewer work with new UI/UX improvement patch":
-        "https://www.drupal.org/files/issues/2904917-2.patch"
+      "drupal/varbase_heroslider_media": {
+        "Issue #3011432: Unable to install Media Hero Slider due to unmet dependencies":
+        "https://www.drupal.org/files/issues/2018-11-05/remove-theme-dependency-3011432-01.patch"
       }
     }
   }

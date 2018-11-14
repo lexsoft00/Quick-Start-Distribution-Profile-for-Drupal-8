@@ -7,124 +7,108 @@ distribution:
 # version: 8.x-6.x-dev
 dependencies:
   # core
+  - automated_cron
   - block
   - block_content
-  - big_pipe
   - breakpoint
   - ckeditor
   - color
   - config
   - contextual
   - datetime
-  - dblog
   - dynamic_page_cache
+  - big_pipe
   - editor
   - filter
   - entity_reference
-  - entity_reference_revisions
   - field
   - field_ui
   - file
   - help
   - history
   - image
+  - media
   - menu_link_content
   - menu_ui
   - node
   - options
   - page_cache
   - path
+  - quickedit
   - responsive_image
   - shortcut
   - syslog
   - taxonomy
   - telephone
   - toolbar
+  - tour
   - update
   - views
-  - views_ui
   - user
   - text
+  - settings_tray
   - layout_discovery
-  - rdf
 
-   # contrib
-  - automated_cron
-  - ace_editor
-  - admin_toolbar
-  - adminimal_admin_toolbar
-  - advanced_text_formatter
-  - autocomplete_deluxe
-  - better_exposed_filters
-  - block_class
-  - bootstrap_layouts
-  - blazy
-  - coffee
-  - config_update
-  - content_lock
-  - config_filter
-  - config_ignore
-  - ckeditor_accordion
-  - ckeditor_bootstrap_grid
-  - crop
-  - ctools
-  - devel
-  - kint
-  - diff
-  - dropzonejs
-  - ds
-  - embed
+  # contrib modules
   - entity
   - entity_clone
-  - entity_browser
-  - entity_browser_enhanced
-  - entity_reference_revisions
-  - entityqueue
-  - entityqueue_form_widget
-  - entity_embed
-  - extlink
-  - features
-  - field_group
-  - focal_point
-  - google_analytics
-  - imageapi_optimize
-  - inline_entity_form
-  - inline_responsive_images
-  - libraries_ui
-  - link_attributes
-  - linkit
-  - mailsystem
-  - masquerade
-  - maxlength
-  - media_entity
-  - media_entity_document
-  - media_entity_image
-  - menu_block
-  - node_edit_protection
+  - config_update
+  - config_filter
+  - config_ignore
+  - ctools
+  - ctools_block
+  - ctools_views
+  - token
   - page_manager
   - page_manager_ui
   - panels
   - panels_ipe
-  - panelizer
-  - pathologic
-  - rabbit_hole
-  - recaptcha
-  - responsive_image
-  - simple_sitemap
-  - smart_trim
-  - smtp
-  - ultimate_cron
-  - video_embed_field
-  - video_embed_wysiwyg
-  - video_embed_media
+  - bootstrap_layouts
+  - ds
+  - ds_extras
   - views_bootstrap
+  - field_group
+  - smart_trim
+  - advanced_text_formatter
+  - block_class
+  - menu_block
+  - features
+  - linkit
+  - anchor_link
   - views_infinite_scroll
-  - viewsreference
-  - paragraphs
-  - paragraphs_previewer
+  - entityqueue
+  - entityqueue_form_widget
+  - embed
+  - entity_browser
+  - entity_browser_enhanced
+  - dropzonejs
+  - dropzonejs_eb_widget
+  - entity_embed
+  - inline_entity_form
+  - crop
+  - focal_point
+  - pathologic
+  - captcha
+  - recaptcha
+  - ultimate_cron
+  - content_lock
+  - content_lock_timeout
+  - node_edit_protection
+  - rabbit_hole
+  - rh_node
+  - rh_taxonomy
+  - fast404
+  - imageapi_optimize
+  - mailsystem
+  - smtp
+  - maxlength
+  - menu_position
+  - better_exposed_filters
+  - autocomplete_deluxe
+  - link_attributes
 
 themes:
   # Contrib themes.
-  - adminimal_theme_extras
+  - adminimal_theme
   - bootstrap
   - drupalcoders_bootstrap
