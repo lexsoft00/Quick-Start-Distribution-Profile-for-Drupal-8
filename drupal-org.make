@@ -12,7 +12,7 @@ projects[config_update][type] = module
 projects[config_update][version] = 1.5
 
 projects[config_filter][type] = module
-projects[config_filter][version] = 1.3
+projects[config_filter][version] = 1.4
 
 projects[config_ignore][type] = module
 projects[config_ignore][version] = 2.1
@@ -175,7 +175,7 @@ projects[roleassign][type] = module
 projects[roleassign][version] = 1.0-alpha2
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.24
+projects[admin_toolbar][version] = 1.25
 
 projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.8
@@ -372,7 +372,7 @@ projects[recaptcha][type] = module
 projects[recaptcha][version] = 2.3
 
 projects[search_api][type] = module
-projects[search_api][version] = 1.10
+projects[search_api][version] = 1.11
 ;; Issue #2931562: Fixed the Notice: Undefined index: total When we enable the module in the installation step.
 projects[search_api][patch][] = https://www.drupal.org/files/issues/2931562-13--undefined_total_in_task_manager_batch_finish.patch
 
@@ -424,7 +424,7 @@ projects[devel][version] = 1.2
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.13
+projects[bootstrap][version] = 3.15
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.3
@@ -456,7 +456,7 @@ projects[varbase_media][type] = module
 projects[varbase_media][version] = 6.0
 
 projects[varbase_bootstrap_paragraphs][type] = module
-projects[varbase_bootstrap_paragraphs][version] = 6.0
+projects[varbase_bootstrap_paragraphs][version] = 6.1
 
 projects[varbase_landing][type] = module
 projects[varbase_landing][version] = 6.0
