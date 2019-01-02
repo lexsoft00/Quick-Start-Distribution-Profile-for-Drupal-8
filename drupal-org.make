@@ -161,6 +161,11 @@ projects[imageapi_optimize][version] = 2.0-alpha4
 projects[ultimate_cron][type] = module
 projects[ultimate_cron][version] = 2.0-alpha4
 
+projects[persistent_login][type] = module
+projects[persistent_login][version] = 1.1
+;; Issue #2899530: Hide user^s local task
+projects[persistent_login][patch][] = https://www.drupal.org/files/issues/persistent_login-user_task_permission-2899530-6.patch
+
 projects[userprotect][type] = module
 projects[userprotect][version] = 1.0
 
@@ -308,6 +313,16 @@ projects[google_analytics_reports][patch][] = https://www.drupal.org/files/issue
 projects[google_analytics_reports][patch][] = https://www.drupal.org/files/issues/Fix_message-2860399-5.patch
 ;; Issue #2932010: Fixed an issue to Not to check Updates or import Fields while the Drupal site MAINTENANCE_MODE is in Install or Update.
 projects[google_analytics_reports][patch][] = https://www.drupal.org/files/issues/2932010-4.patch
+
+projects[login_destination][type] = module
+projects[login_destination][download][url] = https://git.drupal.org/project/login_destination.git
+projects[login_destination][download][revision] = 54be8b89fdc073ca40af6b9b2eeb050e0aeb7908
+projects[login_destination][download][branch] = 8.x-1.x
+;; Issue #2947616: Fixed SetOptions on null causing error.
+projects[login_destination][patch][] = https://www.drupal.org/files/issues/2018-03-09/toolbar_alter_error-2947616-11.patch
+
+projects[betterlogin][type] = module
+projects[betterlogin][version] = 1.2
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.3
