@@ -9,7 +9,7 @@ defaults[projects][subdir] = "contrib"
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[config_update][type] = module
-projects[config_update][version] = 1.5
+projects[config_update][version] = 1.6
 
 projects[config_filter][type] = module
 projects[config_filter][version] = 1.4
@@ -50,9 +50,7 @@ projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 1.2
 
 projects[ds][type] = module
-projects[ds][version] = 3.1
-;; Issue #2779243: Method declaration incompatibility.
-projects[ds][patch][] = https://www.drupal.org/files/issues/ds-method-declaration-incompatible-2779243-17.patch
+projects[ds][version] = 3.2
 ;; Issue #2920868: Fixed fatal errors when we have missing layouts, on an update.
 projects[ds][patch][] = https://www.drupal.org/files/issues/error-when-layout-is-removed-2920868-4.patch
 ;; Issue #2966959: Fix a DS issue on a Value Conflict with Layout Builder.
@@ -146,9 +144,7 @@ projects[pathologic][type] = module
 projects[pathologic][version] = 1.0-alpha1
 
 projects[ace_editor][type] = module
-projects[ace_editor][version] = 1.0
-;; Issue #2916832: Add support for calling libraries from the current active profile
-projects[ace_editor][patch][] = https://www.drupal.org/files/issues/2916832-4.patch
+projects[ace_editor][version] = 1.1
 
 projects[entityqueue][type] = module
 projects[entityqueue][version] = 1.0-alpha8
@@ -203,7 +199,7 @@ projects[revision_log_default][type] = module
 projects[revision_log_default][version] = 1.0
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc26
+projects[webform][version] = 5.0
 
 projects[default_content][type] = module
 projects[default_content][version] = 1.0-alpha7
@@ -256,11 +252,9 @@ projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.6
 
 projects[taxonomy_menu][type] = module
-projects[taxonomy_menu][download][url] = https://git.drupal.org/project/taxonomy_menu.git
-projects[taxonomy_menu][download][revision] = 1103ad0855de4d242364a5b7e74a5c5fc1ce9e02
-projects[taxonomy_menu][download][branch] = 8.x-3.x
+projects[taxonomy_menu][version] = 3.4
 ;; Issue #2939143: Fixed Undefined method TaxonomyMenu::generateTaxonomyLinks()
-projects[taxonomy_menu][patch][] = https://www.drupal.org/files/issues/2939143-2.patch
+projects[taxonomy_menu][patch][] = https://www.drupal.org/files/issues/2018-12-23/2939143-10.patch
 
 projects[better_exposed_filters][type] = module
 projects[better_exposed_filters][version] = 3.0-alpha5
@@ -334,7 +328,7 @@ projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.3
 
 projects[yoast_seo][type] = module
-projects[yoast_seo][version] = 1.4
+projects[yoast_seo][version] = 1.5
 
 projects[l10n_client][type] = module
 projects[l10n_client][download][url] = https://git.drupal.org/project/l10n_client.git
@@ -377,10 +371,10 @@ projects[search_api][version] = 1.11
 projects[search_api][patch][] = https://www.drupal.org/files/issues/2931562-13--undefined_total_in_task_manager_batch_finish.patch
 
 projects[blazy][type] = module
-projects[blazy][version] = 1.0-rc3
+projects[blazy][version] = 1.0-rc4
 
 projects[slick][type] = module
-projects[slick][version] = 1.0
+projects[slick][version] = 1.1
 ;; Issue #2948735: Adding the alt attribute to the slick thumbnails
 projects[slick][patch][] = https://www.drupal.org/files/issues/2018-04-02/adding-the-alt-attribute-to-the-slick-thumbnails-2948735-3_0.patch
 
@@ -388,7 +382,7 @@ projects[slick_views][type] = module
 projects[slick_views][version] = 1.0-rc2
 
 projects[slick_media][type] = module
-projects[slick_media][version] = 2.0-alpha2
+projects[slick_media][version] = 2.0-alpha3
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Development contrib modules
@@ -424,7 +418,7 @@ projects[devel][version] = 1.2
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.15
+projects[bootstrap][version] = 3.16
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.3
@@ -450,27 +444,25 @@ projects[entity_browser_enhanced][version] = 1.0-rc3
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[varbase_core][type] = module
-projects[varbase_core][version] = 6.2
+projects[varbase_core][version] = 6.4
 
 projects[varbase_media][type] = module
-projects[varbase_media][version] = 6.0
+projects[varbase_media][version] = 6.2
 
 projects[varbase_bootstrap_paragraphs][type] = module
-projects[varbase_bootstrap_paragraphs][version] = 6.1
+projects[varbase_bootstrap_paragraphs][version] = 6.2
 
 projects[varbase_landing][type] = module
-projects[varbase_landing][version] = 6.0
+projects[varbase_landing][version] = 6.1
 
 projects[varbase_search][type] = module
-projects[varbase_search][version] = 6.0
+projects[varbase_search][version] = 6.1
 
 projects[varbase_seo][type] = module
-projects[varbase_seo][version] = 6.1
+projects[varbase_seo][version] = 6.2
 
 projects[varbase_heroslider_media][type] = module
-projects[varbase_heroslider_media][version] = 6.0
-;; Issue #3011432: Unable to install Media Hero Slider due to unmet dependencies.
-projects[varbase_heroslider_media][patch][] = https://www.drupal.org/files/issues/2018-11-05/remove-theme-dependency-3011432-01.patch
+projects[varbase_heroslider_media][version] = 6.1
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Libraries
@@ -490,7 +482,7 @@ libraries[slick][destination] = "libraries"
 
 libraries[ace][directory_name] = "ace"
 libraries[ace][download][type] = "get"
-libraries[ace][download][url] = "http://github.com/ajaxorg/ace-builds/archive/v1.3.3.tar.gz"
+libraries[ace][download][url] = "http://github.com/ajaxorg/ace-builds/archive/v1.4.2.tar.gz"
 libraries[ace][destination] = "libraries"
 
 libraries[colorbox][directory_name] = "colorbox"
