@@ -87,6 +87,9 @@ function quick_start_install_profile_modules(array &$install_state) {
     'title' => t('Install Quick Start modules'),
     'error_message' => t('The installation has encountered an error.'),
   ];
+  // Fix entity updates to clear up any mismatched entity.
+  $batch['operations'][] = ['quick_start_fix_entity_update', (array) TRUE];
+
   return $batch;
 }
 
@@ -115,6 +118,21 @@ function quick_start_install_tasks_alter(&$tasks, $install_state) {
         quick_start_recurse_copy($source, $res);
       }
     };
+  }
+}
+
+/**
+ * Batch function to fix entity updates to clear up any mismatched entity.
+ *
+ * Entity and/or field definitions, The following changes were detected in
+ * the entity type and field definitions.
+ *
+ * @param string|array $entity_update
+ *   To entity update or not.
+ */
+function quick_start_fix_entity_update($entity_update) {
+  if ($entity_update) {
+    \Drupal::entityDefinitionUpdateManager()->applyUpdates();
   }
 }
 
