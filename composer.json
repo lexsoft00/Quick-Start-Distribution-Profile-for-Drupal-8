@@ -92,7 +92,7 @@
     "cweagans/composer-patches": "1.6.4",
     "drupal-composer/drupal-scaffold": "2.4.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.6.3",
+    "drupal/core": "8.6.7",
     "drupal/ace_editor": "1.1",
     "drupal/admin_toolbar": "1.25",
     "drupal/adminimal_admin_toolbar": "1.8",
