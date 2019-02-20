@@ -124,6 +124,8 @@ projects[quick_v_bootstrap_paragraphs][version] = "1.0-alpha4"
 projects[quick_v_media][version] = "1.0-alpha1"
 
 projects[rabbit_hole][version] = "1.0-beta4"
+;; Issue #2961738: Ensure getOperation method exists on form.
+projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2018-05-10/rabbit_hole-instance_of_check-2961738-5.patch
 
 projects[recaptcha][version] = "2.4"
 
