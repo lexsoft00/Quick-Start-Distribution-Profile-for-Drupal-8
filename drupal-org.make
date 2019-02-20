@@ -13,9 +13,9 @@ projects[advanced_text_formatter][version] = "1.0-beta3"
 
 projects[autocomplete_deluxe][version] = "1.0-beta1"
 
-projects[better_exposed_filters][version] = "3.0-alpha4"
+projects[better_exposed_filters][version] = "3.0-alpha6"
 
-projects[blazy][version] = "1.0-rc2"
+projects[blazy][version] = "1.0-rc4"
 
 projects[block_class][version] = "1.0"
 
@@ -51,13 +51,13 @@ projects[ds][version] = "3.2"
 
 projects[embed][version] = "1.0"
 
-projects[entity][version] = "1.0-beta4"
+projects[entity][version] = "1.0-rc1"
 
 projects[entity_browser][version] = "1.7"
 
 projects[entity_browser_enhanced][version] = "1.0-rc3"
 
-projects[entity_clone][version] = "1.0-alpha2"
+projects[entity_clone][version] = "1.0-beta2"
 
 projects[entity_embed][version] = "1.0-beta2"
 
