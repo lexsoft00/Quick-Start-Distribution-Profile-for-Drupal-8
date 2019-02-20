@@ -34,17 +34,16 @@ function quick_start_install_profile_modules(array &$install_state) {
   $files = system_rebuild_module_data();
 
   $modules = [
-    'varbase_core' => 'varbase_core',
-    'varbase_admin' => 'varbase_admin',
     'varbase_media' => 'varbase_media',
-    'varbase_security' => 'varbase_security',
-    'varbase_webform' => 'varbase_webform',
-    'quick_editor' => 'quick_editor',
     'varbase_bootstrap_paragraphs' => 'varbase_bootstrap_paragraphs',
-    'varbase_page' => 'varbase_page',
     'varbase_landing' => 'varbase_landing',
     'varbase_search' => 'varbase_search',
     'varbase_seo' => 'varbase_seo',
+    'quick_admin' => 'quick_admin',
+    'quick_security' => 'quick_security',
+    'quick_editor' => 'quick_editor',
+    'quick_page' => 'quick_page',
+    'quick_webform' => 'quick_webform',
   ];
   $quick_start_modules = $modules;
   // Always install required modules first. Respect the dependencies between

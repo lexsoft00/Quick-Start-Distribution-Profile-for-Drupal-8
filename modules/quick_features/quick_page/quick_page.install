@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the Quick Start editor module.
+ * Contains install and update for Quick page module.
  */
 
 use Symfony\Component\Yaml\Yaml;
@@ -10,12 +10,11 @@ use Drupal\Core\Config;
 use Drupal\Core\Config\InstallStorage;
 use Drupal\Core\Config\StorageInterface;
 use Drupal\Core\Config\FileStorage;
-use Drupal\filter\Entity\FilterFormat;
 
 /**
  * Implements hook_install().
  */
-function quick_editor_install() {
+function quick_page_install() {
 
   $module_name = preg_replace('/_install$/', '', __FUNCTION__);
   $module_path = Drupal::service('module_handler')->getModule($module_name)->getPath();

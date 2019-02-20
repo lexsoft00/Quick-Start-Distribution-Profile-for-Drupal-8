@@ -2,9 +2,14 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the profilename install profile.
+ * Install, update and uninstall functions for the Quick Start install profile.
  */
 
+use Symfony\Component\Yaml\Yaml;
+use Drupal\Core\Config;
+use Drupal\Core\Config\InstallStorage;
+use Drupal\Core\Config\StorageInterface;
+use Drupal\Core\Config\FileStorage;
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\shortcut\Entity\Shortcut;
@@ -17,64 +22,29 @@ use Drupal\shortcut\Entity\Shortcut;
  * @see system_install()
  */
 function quick_start_install() {
+
+  // Install optional configs.
+  $config_installer = \Drupal::service('config.installer');
+  $optional_install_path = drupal_get_path('profile', 'quick_start') . '/' . InstallStorage::CONFIG_OPTIONAL_DIRECTORY;
+  if (is_dir($optional_install_path)) {
+    // Install any optional config the profile provides.
+    $storage = new FileStorage($optional_install_path, StorageInterface::DEFAULT_COLLECTION);
+    $config_installer->installOptionalConfig($storage, '');
+    // Have the .settings.yml configs into the active config.
+    $settings_config_files = file_scan_directory($optional_install_path, '/^.*(settings.yml)$/i');
+    if (isset($settings_config_files) && is_array($settings_config_files)) {
+      foreach ($settings_config_files as $settings_config_file) {
+        $settings_config_file_content = file_get_contents(DRUPAL_ROOT . '/' . $settings_config_file->uri);
+        $settings_config_file_data = (array) Yaml::parse($settings_config_file_content);
+        $config_factory = \Drupal::configFactory()->getEditable($settings_config_file->name);
+        $config_factory->setData($settings_config_file_data)->save(TRUE);
+      }
+    }
+  }
+
   // Set front page to "node".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
 
-  // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
-
-  // Restrict user registration to admin role creation.
-  \Drupal::configFactory()->getEditable('user.settings')->set('register', USER_REGISTER_ADMINISTRATORS_ONLY)->save(TRUE);
-
-  // Allow authenticated users to use shortcuts.
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['access shortcuts']);
-
-  // Populate the default shortcut set.
-  $shortcut = Shortcut::create([
-    'shortcut_set' => 'default',
-    'title' => t('Add content'),
-    'weight' => 0,
-    'link' => ['uri' => 'internal:/node/add'],
-  ]);
-  $shortcut->save();
-
-  $shortcut = Shortcut::create([
-    'shortcut_set' => 'default',
-    'title' => t('All content'),
-    'weight' => 1,
-    'link' => ['uri' => 'internal:/admin/content'],
-  ]);
-  $shortcut->save();
-
-  $shortcut = Shortcut::create([
-    'shortcut_set' => 'default',
-    'title' => t('All media'),
-    'weight' => 2,
-    'link' => ['uri' => 'internal:/admin/content/media'],
-  ]);
-  $shortcut->save();
-
-  $shortcut = Shortcut::create([
-    'shortcut_set' => 'default',
-    'title' => t('Taxonomy'),
-    'weight' => 3,
-    'link' => ['uri' => 'internal:/admin/structure/taxonomy'],
-  ]);
-  $shortcut->save();
-
-  $shortcut = Shortcut::create([
-    'shortcut_set' => 'default',
-    'title' => t('Permissions'),
-    'weight' => 4,
-    'link' => ['uri' => 'internal:/admin/people/permissions'],
-  ]);
-  $shortcut->save();
-
-  // Allow all users to use search.
-  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['search content']);
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['search content']);
   // Default user theme.
   \Drupal::configFactory()->getEditable('system.theme')->set('default', 'drupalcoders_bootstrap')->save(TRUE);
   // Enable the admin theme.

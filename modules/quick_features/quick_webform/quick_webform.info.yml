@@ -1,0 +1,16 @@
+name: 'Quick Webform'
+description: 'Provide webforms features and settings.'
+type: module
+package: QuickStart
+version: '8.x-6.5'
+core: '8.x'
+project: quick_start
+dependencies: 
+  - webform:webform
+install:
+  - webform_bootstrap
+  - webform_templates
+  - webform_ui
+  - webform_analysis
+  - taxonomy
+  - webform_views

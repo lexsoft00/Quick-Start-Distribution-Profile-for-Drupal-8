@@ -59,10 +59,6 @@ dependencies:
   - ctools_block
   - ctools_views
   - token
-  - page_manager
-  - page_manager_ui
-  - panels
-  - panels_ipe
   - bootstrap_layouts
   - ds
   - ds_extras
@@ -75,37 +71,26 @@ dependencies:
   - features
   - linkit
   - anchor_link
-  - views_infinite_scroll
   - entityqueue
   - entityqueue_form_widget
-  - embed
-  - entity_browser
-  - entity_browser_enhanced
-  - dropzonejs
-  - dropzonejs_eb_widget
-  - entity_embed
-  - inline_entity_form
-  - crop
-  - focal_point
   - pathologic
   - captcha
   - recaptcha
   - ultimate_cron
-  - content_lock
-  - content_lock_timeout
-  - node_edit_protection
   - rabbit_hole
   - rh_node
   - rh_taxonomy
   - fast404
-  - imageapi_optimize
   - mailsystem
   - smtp
   - maxlength
-  - menu_position
   - better_exposed_filters
   - autocomplete_deluxe
   - link_attributes
+  - diff
+  - extlink
+  - inline_entity_form
+  - persistent_login
 
 themes:
   # Contrib themes.

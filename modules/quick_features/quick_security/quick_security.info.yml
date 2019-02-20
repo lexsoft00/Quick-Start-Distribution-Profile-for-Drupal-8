@@ -1,0 +1,20 @@
+name: 'Quick Security'
+description: 'Manages general security configurations, with password policy, username enumeration prevention, security kit and review.'
+type: module
+package: QuickStart
+version: '8.x-6.5'
+core: 8.x
+project: quick_start
+install:
+  - captcha
+  - recaptcha
+  - honeypot
+  - password_policy
+  - password_policy_character_types
+  - password_policy_characters
+  - password_policy_history
+  - password_policy_length
+  - password_policy_username
+  - seckit
+  - security_review
+  - username_enumeration_prevention

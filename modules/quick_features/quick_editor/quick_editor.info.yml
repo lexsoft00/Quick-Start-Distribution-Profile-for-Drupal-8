@@ -6,11 +6,18 @@ version: 8.x-2.x-dev
 core: 8.x
 project: quick_start
 dependencies:
+  - drupal:node
   - drupal:editor
   - drupal:ckeditor
   - drupal:filter
-  - ace_editor:ace_editor
-  - anchor_link:anchor_link
-  - image_resize_filter:image_resize_filter
-  - linkit:linkit
-  - pathologic:pathologic
+install:
+  - ace_editor
+  - ckeditor_media_embed
+  - ckeditor_accordion
+  - ckeditor_bootstrap_grid
+  - entity_embed
+  - image_resize_filter
+  - extlink
+  - linkit
+  - anchor_link
+  - pathologic
