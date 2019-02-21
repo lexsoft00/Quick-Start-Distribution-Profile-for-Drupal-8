@@ -39,7 +39,7 @@ projects[content_lock][version] = "1.0-alpha8"
 
 projects[crop][version] = "1.5"
 
-projects[ctools][version] = "3.1"
+projects[ctools][version] = "3.2"
 
 projects[devel][version] = "2.0"
 
@@ -103,7 +103,7 @@ projects[media_entity_image][version] = "1.3"
 
 projects[menu_block][version] = "1.5"
 
-projects[metatag][version] = "1.7"
+projects[metatag][version] = "1.8"
 
 projects[page_manager][version] = "4.0-beta3"
 
@@ -111,7 +111,7 @@ projects[panelizer][version] = "4.1"
 
 projects[panels][version] = "4.3"
 
-projects[paragraphs][version] = "1.5"
+projects[paragraphs][version] = "1.6"
 
 projects[paragraphs_previewer][version] = "1.4"
 
