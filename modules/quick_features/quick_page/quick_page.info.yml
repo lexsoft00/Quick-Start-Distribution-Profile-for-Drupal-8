@@ -1,10 +1,9 @@
 name: 'Quick Page'
 description: 'Provides Basic page content type and related configuration.'
 type: module
-package: QuickStart
-version: '8.x-6.5'
+package: 'Quick Start'
 core: '8.x'
-project: quick_start
+project: 'quick_start'
 install:
   - text
   - editor

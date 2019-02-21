@@ -1,9 +1,9 @@
-name: Quick Start
+name: 'Quick Start'
 type: profile
-description: Quick Start for Drupal 8, best used with Aegir Hosting.
+description: 'Quick Start for Drupal 8, best used with Aegir Hosting.'
 core: 8.x
 distribution:
-  name: Quick Start
+  name: 'Quick Start'
 # version: 8.x-6.x-dev
 dependencies:
   # core

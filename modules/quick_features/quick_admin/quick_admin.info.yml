@@ -1,8 +1,7 @@
 name: 'Quick Admin'
 description: 'Manage administration configurations.'
 type: module
-package: QuickStart
-version: '8.x-6.5'
+package: 'Quick Start'
 core: '8.x'
 project: 'quick_start'
 dependencies:
