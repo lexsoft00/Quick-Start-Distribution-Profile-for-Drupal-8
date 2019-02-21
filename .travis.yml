@@ -117,7 +117,7 @@ install:
   - ls -l bin/
   - chmod -R 775 bin/
   - cd docroot/profiles
-  - git clone -b TRAVIS_BRANCH https://github.com/$TRAVIS_REPO_SLUG.git quick_start
+  - git clone -b $TRAVIS_BRANCH https://github.com/$TRAVIS_REPO_SLUG.git quick_start
 
 ## Install with drush.
   - cd ../
