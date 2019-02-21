@@ -2,16 +2,10 @@ Feature: Content Management - Add hero slider to entityqueue using entityqueue f
 As a logged in user with a permission to mange entityqueues
 I want to be able to add and remove entities to any allowed entityqueue.
 
-@local @development @staging @production
+  @local @development @staging @production
   Scenario: Upload the "Flag Earth" file.
     Given I am a logged in user with the "test_site_admin" user
-     When I go to "admin/content/media-table"
-      And I wait
-     Then I should see "Add media"
-     When I click "Add media"
-      And I wait
-     Then I should see "Image"
-     When I go to "/media/add/image"
+     When I go to "media/add/image"
       And I wait
      Then I should see "Allowed types: png gif jpg jpeg."
      When I attach the file "flag-earth.jpg" to "Image"
@@ -51,8 +45,9 @@ I want to be able to add and remove entities to any allowed entityqueue.
      When I switch to iframe "entity_browser_iframe_media_browser"
       And I fill in "Flag Earth" for "edit-name"
       And I press the "Search" button
-      And wait max of 5s
+      And wait max of 10s
      Then I should see image with the "Flag Earth all earth in space" title text
+      And wait max of 10s
      When I double click on the image with the "Flag Earth all earth in space" title text
       And I wait for AJAX to finish
       And wait max of 5s
@@ -83,8 +78,9 @@ I want to be able to add and remove entities to any allowed entityqueue.
      When I switch to iframe "entity_browser_iframe_media_browser"
       And I fill in "Flag Earth" for "edit-name"
       And I press the "Search" button
-      And wait max of 5s
+      And wait max of 10s
      Then I should see image with the "Flag Earth all earth in space" title text
+      And wait max of 10s
      When I double click on the image with the "Flag Earth all earth in space" title text
       And I wait for AJAX to finish
       And wait max of 5s
