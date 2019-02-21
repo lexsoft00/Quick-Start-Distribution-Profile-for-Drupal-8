@@ -31,6 +31,7 @@ I want to be able to clone an entity.
       And I press "field_lp_paragraphs_0_subform_bp_modal_body_bp_simple_add_more"
       And I wait
      Then I should see "Modal body"
+      And I wait 5s
       And I fill in the rich text editor field "Text" with "Modal Body test"
      When I press "Save"
      Then I should see "Modal button"
@@ -52,11 +53,14 @@ I want to be able to clone an entity.
       And I wait
      Then I should see "Test Clone landing page - Cloned"
       And I check the box "edit-node-bulk-form-0"
-      And I select "Delete content" from "With selection"
+      And I select "Delete content" from "Action"
       And I press "Apply to selected items"
-      And I press "Delete"
       And I wait
-     Then I go to "admin/content"
+     Then I should see "Are you sure you want to delete this content item?"
+     When I press "Delete"
+      And I wait
+     Then I should see "Deleted 1 content item."
+     When I go to "admin/content"
       And I wait
      Then I should see "Content"
      When I fill in "Test Clone landing page - Cloned" for "Title"
