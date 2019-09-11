@@ -103,13 +103,13 @@ projects[media_entity_image][version] = "1.3"
 
 projects[menu_block][version] = "1.5"
 
-projects[metatag][version] = "1.8"
+projects[metatag][version] = "1.10"
 
-projects[page_manager][version] = "4.0-beta3"
+projects[page_manager][version] = "4.0-beta4"
 
 projects[panelizer][version] = "4.1"
 
-projects[panels][version] = "4.3"
+projects[panels][version] = "4.4"
 
 projects[paragraphs][version] = "1.9"
 
