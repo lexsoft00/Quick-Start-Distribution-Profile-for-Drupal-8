@@ -219,34 +219,6 @@
         "https://www.drupal.org/files/issues/2019-03-31/3044656-2.patch",
         "Issue #2646744: Drupal Core Url does not accept root-relative (file) URLs, making it impossible to let LinkGenerator create root-relative file URL links":
         "https://www.drupal.org/files/issues/2018-12-15/2646744-34.patch"
-      },
-      "drupal/coffee": {
-        "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8":
-        "https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch",
-        "Issue #2872093: Coffee css fixes in RTL":
-        "https://www.drupal.org/files/issues/2872093-10.patch"
-      },
-      "drupal/default_content": {
-        "Issue #2900089: Invalid translation language error when selected installation language does not match demo content language":
-        "https://www.drupal.org/files/issues/2900089-14.patch",
-        "Issue #2886350: Allow export of all site content.":
-        "https://www.drupal.org/files/issues/default_content-export_all_content-2886350-2-D8.patch"
-      },
-      "drupal/persistent_login": {
-        "Issue #2899530: Hide user^s local task":
-        "https://www.drupal.org/files/issues/persistent_login-user_task_permission-2899530-6.patch"
-      },
-      "drupal/login_destination": {
-        "Issue #2947616: Fixed SetOptions on null causing error.":
-        "https://www.drupal.org/files/issues/2018-03-09/toolbar_alter_error-2947616-11.patch"
-      },
-      "drupal/field_group": {
-        "Issue #2921228: Accordion does not work":
-        "https://www.drupal.org/files/issues/field_group_accordion-2921228-3.patch"
-      },
-      "drupal/ckeditor_media_embed": {
-        "Issue #2900313: Add ability to embed tweets and other rich content in WYSIWYG":
-        "https://www.drupal.org/files/issues/embed_rich_content_in_WYSIWYG-2900313-2.patch"
       }
     }
   }
