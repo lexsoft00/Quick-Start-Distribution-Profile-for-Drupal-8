@@ -127,7 +127,7 @@ projects[rabbit_hole][version] = "1.0-beta6"
 
 projects[recaptcha][version] = "2.4"
 
-projects[simple_sitemap][version] = "2.12"
+projects[simple_sitemap][version] = "3.3"
 
 projects[smart_trim][version] = "1.1"
 
