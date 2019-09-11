@@ -180,7 +180,7 @@ projects[yoast_seo][version] = "1.5"
 ; Themes
 projects[adminimal_theme][version] = "1.4"
 
-projects[bootstrap][version] = "3.17"
+projects[bootstrap][version] = "3.20"
 
 projects[drupalcoders_bootstrap][version] = "1.0-rc2"
 
