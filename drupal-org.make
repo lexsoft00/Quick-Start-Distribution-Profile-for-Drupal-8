@@ -5,11 +5,11 @@ defaults[projects][subdir] = "contrib"
 ; Modules
 projects[ace_editor][version] = "1.1"
 
-projects[admin_toolbar][version] = "1.26"
+projects[admin_toolbar][version] = "1.27"
 
 projects[adminimal_admin_toolbar][version] = "1.9"
 
-projects[advanced_text_formatter][version] = "1.0-beta3"
+projects[advanced_text_formatter][version] = "1.0"
 
 projects[autocomplete_deluxe][version] = "1.0-beta1"
 
@@ -23,7 +23,7 @@ projects[bootstrap_layouts][version] = "5.1"
 
 projects[captcha][version] = "1.0-beta1"
 
-projects[ckeditor_accordion][version] = "1.1"
+projects[ckeditor_accordion][version] = "1.2"
 
 projects[ckeditor_bootstrap_grid][version] = "1.2"
 
@@ -47,33 +47,33 @@ projects[diff][version] = "1.0-rc2"
 
 projects[dropzonejs][version] = "1.0-alpha8"
 
-projects[ds][version] = "3.2"
+projects[ds][version] = "3.4"
 
 projects[embed][version] = "1.0"
 
-projects[entity][version] = "1.0-rc1"
+projects[entity][version] = "1.0-rc3"
 
-projects[entity_browser][version] = "1.7"
+projects[entity_browser][version] = "1.8"
 
-projects[entity_browser_enhanced][version] = "1.0-rc3"
+projects[entity_browser_enhanced][version] = "1.0-rc5"
 
-projects[entity_clone][version] = "1.0-beta2"
+projects[entity_clone][version] = "1.0-beta3"
 
-projects[entity_embed][version] = "1.0-beta2"
+projects[entity_embed][version] = "1.0"
 
 projects[entity_reference_revisions][version] = "1.6"
 
-projects[entityqueue][version] = "1.0-alpha8"
+projects[entityqueue][version] = "1.0-beta5"
 
-projects[entityqueue_form_widget][version] = "1.0-beta3"
+projects[entityqueue_form_widget][version] = "1.0"
 
 projects[extlink][version] = "1.1"
 
 projects[features][version] = "3.8"
 
-projects[field_group][version] = "3.0-beta1"
+projects[field_group][version] = "3.0-rc1"
 
-projects[focal_point][version] = "1.0-beta6"
+projects[focal_point][version] = "1.0"
 
 projects[google_analytics][version] = "2.4"
 
@@ -111,11 +111,11 @@ projects[panelizer][version] = "4.1"
 
 projects[panels][version] = "4.3"
 
-projects[paragraphs][version] = "1.6"
+projects[paragraphs][version] = "1.9"
 
 projects[paragraphs_previewer][version] = "1.4"
 
-projects[pathauto][version] = "1.3"
+projects[pathauto][version] = "1.4"
 
 projects[pathologic][version] = "1.0-alpha1"
 
@@ -123,9 +123,7 @@ projects[quick_v_bootstrap_paragraphs][version] = "1.0-alpha4"
 
 projects[quick_v_media][version] = "1.0-alpha1"
 
-projects[rabbit_hole][version] = "1.0-beta4"
-;; Issue #2961738: Ensure getOperation method exists on form.
-projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2018-05-10/rabbit_hole-instance_of_check-2961738-5.patch
+projects[rabbit_hole][version] = "1.0-beta6"
 
 projects[recaptcha][version] = "2.4"
 
@@ -139,20 +137,20 @@ projects[token][version] = "1.5"
 
 projects[ultimate_cron][version] = "2.0-alpha4"
 
-projects[video_embed_field][version] = "1.5"
+projects[video_embed_field][version] = "1.6"
 
 projects[views_bootstrap][version] = "3.1"
 
-projects[views_infinite_scroll][version] = "1.5"
+projects[views_infinite_scroll][version] = "1.6"
 
 projects[viewsreference][version] = "1.4"
 
-projects[webform][version] = "5.1"
+projects[webform][version] = "5.4"
 
 projects[yoast_seo][version] = "1.5"
 
 ; Themes
-projects[bootstrap][version] = "3.17"
+projects[bootstrap][version] = "3.20"
 projects[drupalcoders_bootstrap][version] = "1.0-rc2"
 
 libraries[dropzone][download][type] = get
