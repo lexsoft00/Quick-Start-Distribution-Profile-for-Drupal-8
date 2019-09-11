@@ -99,7 +99,7 @@ projects[menu_admin_per_menu][version] = "1.0"
 
 projects[menu_block][version] = "1.5"
 
-projects[metatag][version] = "1.8"
+projects[metatag][version] = "1.10"
 
 projects[paragraphs][version] = "1.6"
 
