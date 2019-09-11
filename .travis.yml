@@ -115,7 +115,7 @@ before_install:
 install:
   - git checkout $TRAVIS_COMMIT
   ## Build with the composer.
-  - composer install --no-interaction
+  - COMPOSER_MEMORY_LIMIT=-1 travis_retry composer install --prefer-dist --no-interaction
   - ls -l bin/
   - chmod -R 775 bin/
   - cd docroot/profiles
