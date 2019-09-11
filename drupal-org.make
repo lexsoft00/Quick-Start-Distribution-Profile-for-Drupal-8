@@ -41,11 +41,11 @@ projects[crop][version] = "1.5"
 
 projects[ctools][version] = "3.2"
 
-projects[devel][version] = "2.0"
+projects[devel][version] = "2.1"
 
 projects[diff][version] = "1.0-rc2"
 
-projects[dropzonejs][version] = "1.0-alpha8"
+projects[dropzonejs][version] = "1.0-alpha9"
 
 projects[ds][version] = "3.4"
 
@@ -85,7 +85,7 @@ projects[inline_responsive_images][version] = "2.1"
 
 projects[libraries_ui][version] = "1.0"
 
-projects[link_attributes][version] = "1.5"
+projects[link_attributes][version] = "1.9"
 
 projects[linkit][version] = "4.3"
 
