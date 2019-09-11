@@ -27,6 +27,8 @@
     }
   },
   "require": {
+    "zaporylie/composer-drupal-optimizations": "^1.0",
+    "drupal-composer/drupal-security-advisories": "8.x-dev",
     "composer/installers": "~1.0",
     "oomphinc/composer-installers-extender": "~1.0",
     "cweagans/composer-patches": "~1.0",
