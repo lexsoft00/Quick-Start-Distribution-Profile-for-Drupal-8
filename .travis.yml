@@ -100,6 +100,9 @@ before_install:
   # Update Chrome.
   - export CHROME_BIN=/usr/bin/google-chrome
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo apt-get clean
+  - sudo apt-get update
+  - sudo apt-get install -y dpkg
   - sudo dpkg -i google-chrome-stable_current_amd64.deb
   - rm google-chrome-stable_current_amd64.deb
   - google-chrome --version
@@ -112,8 +115,7 @@ before_install:
 install:
   - git checkout $TRAVIS_COMMIT
   ## Build with the composer.
-  - composer validate --no-check-all --ansi
-  - COMPOSER_MEMORY_LIMIT=-1 travis_retry composer install --no-interaction
+  - COMPOSER_MEMORY_LIMIT=-1 travis_retry composer install --prefer-dist --no-interaction
   - ls -l bin/
   - chmod -R 775 bin/
   - cd docroot/profiles
