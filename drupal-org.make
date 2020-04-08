@@ -1,21 +1,20 @@
 api = 2
 core = 8.x
 defaults[projects][subdir] = "contrib"
-
 ; Modules
 projects[ace_editor][version] = "1.1"
 
-projects[admin_toolbar][version] = "1.27"
+projects[admin_toolbar][version] = "1.26"
 
-projects[adminimal_admin_toolbar][version] = "1.9"
+projects[adminimal_admin_toolbar][version] = "1.10"
 
-projects[advanced_text_formatter][version] = "1.0"
+projects[advanced_text_formatter][version] = "1.0-beta3"
 
 projects[autocomplete_deluxe][version] = "1.0-beta1"
 
-projects[better_exposed_filters][version] = "3.0-alpha6"
+projects[better_exposed_filters][version] = "3.0-alpha4"
 
-projects[blazy][version] = "1.0-rc4"
+projects[blazy][version] = "1.0-rc2"
 
 projects[block_class][version] = "1.0"
 
@@ -23,7 +22,7 @@ projects[bootstrap_layouts][version] = "5.1"
 
 projects[captcha][version] = "1.0-beta1"
 
-projects[ckeditor_accordion][version] = "1.2"
+projects[ckeditor_accordion][version] = "1.1"
 
 projects[ckeditor_bootstrap_grid][version] = "1.2"
 
@@ -39,41 +38,41 @@ projects[content_lock][version] = "1.0-alpha8"
 
 projects[crop][version] = "1.5"
 
-projects[ctools][version] = "3.2"
+projects[ctools][version] = "3.1"
 
-projects[devel][version] = "2.1"
+projects[devel][version] = "2.0"
 
 projects[diff][version] = "1.0-rc2"
 
-projects[dropzonejs][version] = "1.0-alpha9"
+projects[dropzonejs][version] = "1.0-alpha8"
 
-projects[ds][version] = "3.4"
+projects[ds][version] = "3.2"
 
 projects[embed][version] = "1.0"
 
-projects[entity][version] = "1.0-rc3"
+projects[entity][version] = "1.0-beta4"
 
-projects[entity_browser][version] = "1.8"
+projects[entity_browser][version] = "1.7"
 
-projects[entity_browser_enhanced][version] = "1.0-rc5"
+projects[entity_browser_enhanced][version] = "1.0-rc3"
 
-projects[entity_clone][version] = "1.0-beta3"
+projects[entity_clone][version] = "1.0-alpha2"
 
-projects[entity_embed][version] = "1.0"
+projects[entity_embed][version] = "1.0-beta2"
 
 projects[entity_reference_revisions][version] = "1.6"
 
-projects[entityqueue][version] = "1.0-beta5"
+projects[entityqueue][version] = "1.0-alpha8"
 
-projects[entityqueue_form_widget][version] = "1.0"
+projects[entityqueue_form_widget][version] = "1.0-beta3"
 
 projects[extlink][version] = "1.1"
 
 projects[features][version] = "3.8"
 
-projects[field_group][version] = "3.0-rc1"
+projects[field_group][version] = "3.0-beta1"
 
-projects[focal_point][version] = "1.0"
+projects[focal_point][version] = "1.0-beta6"
 
 projects[google_analytics][version] = "2.4"
 
@@ -85,7 +84,7 @@ projects[inline_responsive_images][version] = "2.1"
 
 projects[libraries_ui][version] = "1.0"
 
-projects[link_attributes][version] = "1.9"
+projects[link_attributes][version] = "1.5"
 
 projects[linkit][version] = "4.3"
 
@@ -103,19 +102,19 @@ projects[media_entity_image][version] = "1.3"
 
 projects[menu_block][version] = "1.5"
 
-projects[metatag][version] = "1.10"
+projects[metatag][version] = "1.7"
 
-projects[page_manager][version] = "4.0-beta4"
+projects[page_manager][version] = "4.0-beta3"
 
 projects[panelizer][version] = "4.1"
 
-projects[panels][version] = "4.4"
+projects[panels][version] = "4.3"
 
-projects[paragraphs][version] = "1.9"
+projects[paragraphs][version] = "1.5"
 
 projects[paragraphs_previewer][version] = "1.4"
 
-projects[pathauto][version] = "1.4"
+projects[pathauto][version] = "1.3"
 
 projects[pathologic][version] = "1.0-alpha1"
 
@@ -123,13 +122,13 @@ projects[quick_v_bootstrap_paragraphs][version] = "1.0-alpha4"
 
 projects[quick_v_media][version] = "1.0-alpha1"
 
-projects[rabbit_hole][version] = "1.0-beta6"
+projects[rabbit_hole][version] = "1.0-beta4"
 
 projects[recaptcha][version] = "2.4"
 
-projects[simple_sitemap][version] = "3.3"
+projects[simple_sitemap][version] = "2.12"
 
-projects[smart_trim][version] = "1.1"
+projects[smart_trim][version] = "1.2"
 
 projects[smtp][version] = "1.0-beta4"
 
@@ -137,20 +136,20 @@ projects[token][version] = "1.5"
 
 projects[ultimate_cron][version] = "2.0-alpha4"
 
-projects[video_embed_field][version] = "1.6"
+projects[video_embed_field][version] = "1.5"
 
 projects[views_bootstrap][version] = "3.1"
 
-projects[views_infinite_scroll][version] = "1.6"
+projects[views_infinite_scroll][version] = "1.5"
 
 projects[viewsreference][version] = "1.4"
 
-projects[webform][version] = "5.4"
+projects[webform][version] = "5.1"
 
 projects[yoast_seo][version] = "1.5"
 
 ; Themes
-projects[bootstrap][version] = "3.20"
+projects[bootstrap][version] = "3.17"
 projects[drupalcoders_bootstrap][version] = "1.0-rc2"
 
 libraries[dropzone][download][type] = get
